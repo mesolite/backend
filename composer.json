@@ -1,0 +1,89 @@
+{
+    "keywords": ["framework", "laravel", "amethyst"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.1.3",
+        "barryvdh/laravel-cors": "^0.11.2",
+        "fideloper/proxy": "^4.0",
+        "hanneskod/classtools": "~1.0",
+        "laravel/framework": "5.6.*",
+        "laravel/passport": "^6.0",
+        "laravel/tinker": "^1.0",
+        "predis/predis": "^1.1",
+        "railken/amethyst-account": "0.1.*",
+        "railken/amethyst-authentication": "0.1.*",
+        "railken/amethyst-config": "0.1.*",
+        "railken/amethyst-owner": "0.1.*",
+        "railken/amethyst-attribute": "0.1.*",
+        "railken/amethyst-data-builder": "0.1.*",
+        "railken/amethyst-email-log": "0.1.*",
+        "railken/amethyst-email-sender": "0.1.*",
+        "railken/amethyst-setting": "0.1.*",
+        "railken/amethyst-event-logger": "0.1.*",
+        "railken/amethyst-exporter": "0.1.*",
+        "railken/amethyst-importer": "0.1.*",
+        "railken/amethyst-file": "0.1.*",
+        "railken/amethyst-file-generator": "0.1.*",
+        "railken/amethyst-listener": "0.1.*",
+        "railken/amethyst-notification": "0.1.*",
+        "railken/amethyst-notification-sender": "0.1.*",
+        "railken/amethyst-schedule": "0.1.*",
+        "railken/amethyst-template": "0.1.*",
+        "railken/amethyst-user": "0.1.*",
+        "railken/amethyst-work": "0.1.*",
+        "railken/amethyst-post": "0.1.*",
+        "railken/amethyst-company": "0.1.*",
+        "railken/amethyst-taxonomy": "0.1.*",
+        "railken/amethyst-office": "0.1.*",
+        "railken/amethyst-employee": "0.1.*"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "filp/whoops": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^2.0",
+        "phpstan/phpstan": "^0.10.2",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
