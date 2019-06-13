@@ -3968,16 +3968,16 @@
         },
         {
             "name": "railken/amethyst-attendance",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-attendance.git",
-                "reference": "08293b6b668bf0a300bcd55153c042d3773001e1"
+                "reference": "b8cc723880c7cdbd5ed6db0e9033b82985f3628e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-attendance/zipball/08293b6b668bf0a300bcd55153c042d3773001e1",
-                "reference": "08293b6b668bf0a300bcd55153c042d3773001e1",
+                "url": "https://api.github.com/repos/railken/amethyst-attendance/zipball/b8cc723880c7cdbd5ed6db0e9033b82985f3628e",
+                "reference": "b8cc723880c7cdbd5ed6db0e9033b82985f3628e",
                 "shasum": ""
             },
             "require": {
@@ -4019,7 +4019,7 @@
                 "attendance",
                 "laravel"
             ],
-            "time": "2019-06-13T08:25:44+00:00"
+            "time": "2019-06-13T08:57:50+00:00"
         },
         {
             "name": "railken/amethyst-attribute",
