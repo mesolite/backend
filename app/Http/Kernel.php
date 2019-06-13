@@ -21,6 +21,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\ForceJson::class,
         \Barryvdh\Cors\HandleCors::class,
+        \Matthewbdaly\ETagMiddleware\ETag::class,
         \BenConstable\Localize\Http\Middleware\Localize::class
     ];
 

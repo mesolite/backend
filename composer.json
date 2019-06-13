@@ -44,6 +44,7 @@
         "railken/amethyst-template": "0.1.*",
         "railken/amethyst-user": "0.1.*",
         "railken/amethyst-work": "0.1.*",
+        "swooletw/laravel-swoole": "^2.5",
         "tecnickcom/tcpdf": "^6.2"
     },
     "require-dev": {
