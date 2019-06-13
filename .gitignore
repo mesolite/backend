@@ -17,5 +17,3 @@ yarn-error.log
 laravel-echo-server\.json
 docs
 public/assets/amethyst/
-
-composer\.lock
