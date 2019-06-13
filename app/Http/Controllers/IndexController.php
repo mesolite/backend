@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
@@ -16,42 +15,8 @@ class IndexController extends Controller
     {
         $user = $request->user('api');
 
-        $endpoints = Collection::make(Route::getRoutes())
-        ->filter(function ($route) use ($user) {
-            $middleware = isset($route->action['middleware']) ? $route->action['middleware'] : null;
-
-            if (!is_array($middleware)) {
-                $middleware = [$middleware];
-            }
-
-            if (!in_array('api', $middleware) && !in_array('auth:api', $middleware)) {
-                return false;
-            }
-
-            if (in_array('auth:api', $middleware) && $user == null) {
-                return false;
-            }
-
-            if (in_array('admin', $middleware) && $user->role !== 'admin') {
-                return false;
-            }
-
-            return true;
-        })
-        ->sortBy(function ($route) {
-            return $route->uri;
-        })
-        ->map(function ($route) {
-            return [
-                'methods' => $route->methods,
-                'uri'     => $route->uri !== '/' ? '/'.$route->uri : '/',
-            ];
-        })->values()->toArray();
-
         $events = [];
         $dataBuilders = [];
-
-        $amethyst = ['data' => []];
 
         if ($user && $user->role === 'admin') {
             foreach (Config::get('amethyst.event-logger.models-loggable') as $model) {
@@ -74,17 +39,6 @@ class IndexController extends Controller
                 $this->findCachedClasses('app', DataBuilderContract::class),
                 $this->findCachedClasses('vendor/railken/amethyst-*/src', DataBuilderContract::class)
             );
-
-            foreach (Config::get('amethyst') as $namePackage => $package) {
-                foreach ((array) Arr::get($package, 'data') as $nameData => $data) {
-     
-                    if (isset($data['model'])) {
-                        $amethyst['data'][$nameData] = [
-                            'model' => $data['model']
-                        ];
-                    }
-                }
-            }
         }
 
         return [
@@ -92,11 +46,9 @@ class IndexController extends Controller
             'url'         => config('api.url'),
             'description' => config('api.description'),
             'version'     => config('api.version'),
-            'endpoints'   => $endpoints,
             'app'         => [
                 'events'        => $events,
                 'data_builders' => $dataBuilders,
-                'amethyst'      => $amethyst,
             ],
         ];
     }

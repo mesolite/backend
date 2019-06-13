@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello there</h1>
+
+    <div style='margin: auto;width: 50%;'>
+      {{ TCPDF2DBarcode('http://localhost:8000', "QRCODE,H").getBarcodeHtml(12, 12, 'black')|raw  }}
+    </div>
+    
+    <div>
+      Office: {{ office.name }}
+    </div>
+  </body>
+</html>

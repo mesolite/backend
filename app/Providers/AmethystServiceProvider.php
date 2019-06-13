@@ -34,18 +34,6 @@ class AmethystServiceProvider extends ServiceProvider
             }
         });
 
-
-        Config::set('amethyst.category.data.categorizable.attributes.categorizable.options.'.\Railken\Amethyst\Models\Product::class, \Railken\Amethyst\Managers\ProductManager::class);
-
-        Config::set('amethyst.tag.data.tag-entity.taggables.'.\Railken\Amethyst\Models\Activity::class, \Railken\Amethyst\Managers\ActivityManager::class);
-        Config::set('amethyst.post.data.post.attributes.postable.options.'.\Railken\Amethyst\Models\Activity::class, \Railken\Amethyst\Managers\ActivityManager::class);
-        Config::set('amethyst.post.data.post.attributes.postable.options.'.\Railken\Amethyst\Models\Customer::class, \Railken\Amethyst\Managers\CustomerManager::class);
-
-
-        Config::set('amethyst.activity.data.activity.attributes.sourceable.options.'.\Railken\Amethyst\Models\Product::class, \Railken\Amethyst\Managers\ProductManager::class);
-        Config::set('amethyst.warehouse.data.stock.attributes.stockable.options.'.\Railken\Amethyst\Models\Product::class, \Railken\Amethyst\Managers\ProductManager::class);
-        Config::set('amethyst.price.data.price.attributes.priceable.options.'.\Railken\Amethyst\Models\Product::class, \Railken\Amethyst\Managers\ProductManager::class);
-        Config::set('amethyst.activity.data.activitiable.attributes.activitiable.options.'.\Railken\Amethyst\Models\Product::class, \Railken\Amethyst\Managers\ProductManager::class);
-
+        // \Railken\Amethyst\Models\Company::has_many('offices', \Railken\Amethyst\Models\Office::class);
     }
 }

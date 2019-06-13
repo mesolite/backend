@@ -16,3 +16,6 @@ yarn-error.log
 \.php_cs\.cache
 laravel-echo-server\.json
 docs
+public/assets/amethyst/
+
+composer\.lock
