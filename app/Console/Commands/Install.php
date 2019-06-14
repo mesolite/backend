@@ -39,6 +39,7 @@ class Install extends Command
             return;
         }
 
+        $this->call('mapper:generate');
         $this->call('migrate:fresh');
         $this->call('cache:clear');
         $this->call('responsecache:clear');
@@ -51,6 +52,7 @@ class Install extends Command
         $this->call('passport:install', []);
         $this->call('amethyst:data-view:seed');
         $this->call('amethyst:permission:flush');
+
 
         (new \Railken\Amethyst\Managers\EmployeeManager())->createOrFail(\Railken\Amethyst\Fakers\EmployeeFaker::make()->parameters()->toArray());
 

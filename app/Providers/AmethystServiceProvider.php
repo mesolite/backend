@@ -34,6 +34,15 @@ class AmethystServiceProvider extends ServiceProvider
             }
         });
 
-        // \Railken\Amethyst\Models\Company::has_many('offices', \Railken\Amethyst\Models\Office::class);
+
+        app('amethyst')->pushMorphRelation('file', 'model', 'company');
+        app('amethyst')->pushMorphRelation('file', 'model', 'office');
+        app('amethyst')->pushMorphRelation('file', 'model', 'employee');
+        app('amethyst')->pushMorphRelation('file', 'model', 'attendance');
+
+        app('amethyst')->pushMorphRelation('post', 'postable', 'user');
+        app('amethyst')->pushMorphRelation('post', 'postable', 'company');
+        app('amethyst')->pushMorphRelation('post', 'postable', 'office');
+        app('amethyst')->pushMorphRelation('post', 'postable', 'employee');
     }
 }

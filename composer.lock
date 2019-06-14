@@ -1353,16 +1353,16 @@
         },
         {
             "name": "imanghafoori/eloquent-relativity",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imanghafoori1/eloquent-relativity.git",
-                "reference": "f660a6fca433f1b4e8d1e0913524b5ee92252b77"
+                "reference": "334797e957387105974f0b519957c0cf0d5fbff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imanghafoori1/eloquent-relativity/zipball/f660a6fca433f1b4e8d1e0913524b5ee92252b77",
-                "reference": "f660a6fca433f1b4e8d1e0913524b5ee92252b77",
+                "url": "https://api.github.com/repos/imanghafoori1/eloquent-relativity/zipball/334797e957387105974f0b519957c0cf0d5fbff0",
+                "reference": "334797e957387105974f0b519957c0cf0d5fbff0",
                 "shasum": ""
             },
             "require": {
@@ -1404,7 +1404,7 @@
                 "laravel5",
                 "php"
             ],
-            "time": "2019-05-21T15:00:18+00:00"
+            "time": "2019-06-13T13:57:03+00:00"
         },
         {
             "name": "intervention/image",
@@ -3766,16 +3766,16 @@
         },
         {
             "name": "railken/amethyst-activity",
-            "version": "v0.1.13",
+            "version": "v0.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-activity.git",
-                "reference": "b280259ee2863a132ec298f84a26b95be9ddc212"
+                "reference": "3e5c37e41c0b6144ccf92c1fa11abb12ca98d9bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-activity/zipball/b280259ee2863a132ec298f84a26b95be9ddc212",
-                "reference": "b280259ee2863a132ec298f84a26b95be9ddc212",
+                "url": "https://api.github.com/repos/railken/amethyst-activity/zipball/3e5c37e41c0b6144ccf92c1fa11abb12ca98d9bf",
+                "reference": "3e5c37e41c0b6144ccf92c1fa11abb12ca98d9bf",
                 "shasum": ""
             },
             "require": {
@@ -3814,7 +3814,7 @@
                 "amethyst-activity",
                 "laravel"
             ],
-            "time": "2019-05-11T15:00:10+00:00"
+            "time": "2019-06-14T00:06:09+00:00"
         },
         {
             "name": "railken/amethyst-address",
@@ -3865,16 +3865,16 @@
         },
         {
             "name": "railken/amethyst-admin",
-            "version": "v0.1.10",
+            "version": "v0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-admin.git",
-                "reference": "fd7329bdc091fd0b7407c118fdb91fca55cf7c84"
+                "reference": "601ab98cb5059c1b9bea5af01954e45bd9199212"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-admin/zipball/fd7329bdc091fd0b7407c118fdb91fca55cf7c84",
-                "reference": "fd7329bdc091fd0b7407c118fdb91fca55cf7c84",
+                "url": "https://api.github.com/repos/railken/amethyst-admin/zipball/601ab98cb5059c1b9bea5af01954e45bd9199212",
+                "reference": "601ab98cb5059c1b9bea5af01954e45bd9199212",
                 "shasum": ""
             },
             "require": {
@@ -3916,20 +3916,20 @@
                 "amethyst-admin",
                 "laravel"
             ],
-            "time": "2019-06-12T12:19:38+00:00"
+            "time": "2019-06-14T00:06:14+00:00"
         },
         {
             "name": "railken/amethyst-api",
-            "version": "v0.1.40",
+            "version": "v0.1.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-api.git",
-                "reference": "134c96a12529455d7847ed05fdcef361eb120010"
+                "reference": "44ea6b4beaf1112f8444a2f75d30a105ed9d337b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-api/zipball/134c96a12529455d7847ed05fdcef361eb120010",
-                "reference": "134c96a12529455d7847ed05fdcef361eb120010",
+                "url": "https://api.github.com/repos/railken/amethyst-api/zipball/44ea6b4beaf1112f8444a2f75d30a105ed9d337b",
+                "reference": "44ea6b4beaf1112f8444a2f75d30a105ed9d337b",
                 "shasum": ""
             },
             "require": {
@@ -3964,20 +3964,20 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2019-06-12T12:17:10+00:00"
+            "time": "2019-06-14T00:03:03+00:00"
         },
         {
             "name": "railken/amethyst-attendance",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-attendance.git",
-                "reference": "b8cc723880c7cdbd5ed6db0e9033b82985f3628e"
+                "reference": "0198817c22361f4e477a217e39d3b0334092c432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-attendance/zipball/b8cc723880c7cdbd5ed6db0e9033b82985f3628e",
-                "reference": "b8cc723880c7cdbd5ed6db0e9033b82985f3628e",
+                "url": "https://api.github.com/repos/railken/amethyst-attendance/zipball/0198817c22361f4e477a217e39d3b0334092c432",
+                "reference": "0198817c22361f4e477a217e39d3b0334092c432",
                 "shasum": ""
             },
             "require": {
@@ -4019,20 +4019,20 @@
                 "attendance",
                 "laravel"
             ],
-            "time": "2019-06-13T08:57:50+00:00"
+            "time": "2019-06-14T00:06:29+00:00"
         },
         {
             "name": "railken/amethyst-attribute",
-            "version": "v0.1.8",
+            "version": "v0.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-attribute.git",
-                "reference": "0e58a4ab05fad5b4c0c18a17700dbad6f2a094a0"
+                "reference": "263df09e078370054f73cf81307983d44e3f9757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-attribute/zipball/0e58a4ab05fad5b4c0c18a17700dbad6f2a094a0",
-                "reference": "0e58a4ab05fad5b4c0c18a17700dbad6f2a094a0",
+                "url": "https://api.github.com/repos/railken/amethyst-attribute/zipball/263df09e078370054f73cf81307983d44e3f9757",
+                "reference": "263df09e078370054f73cf81307983d44e3f9757",
                 "shasum": ""
             },
             "require": {
@@ -4071,7 +4071,7 @@
                 "attribute",
                 "laravel"
             ],
-            "time": "2019-05-11T15:00:35+00:00"
+            "time": "2019-06-14T00:06:33+00:00"
         },
         {
             "name": "railken/amethyst-authentication",
@@ -4127,21 +4127,20 @@
         },
         {
             "name": "railken/amethyst-common",
-            "version": "v0.1.34",
+            "version": "v0.1.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-common.git",
-                "reference": "9f4880fc6e16876edac57fdc0e5b593f1ff133c1"
+                "reference": "ed67c5d6de011ee521308274b7bde4fd0b926242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-common/zipball/9f4880fc6e16876edac57fdc0e5b593f1ff133c1",
-                "reference": "9f4880fc6e16876edac57fdc0e5b593f1ff133c1",
+                "url": "https://api.github.com/repos/railken/amethyst-common/zipball/ed67c5d6de011ee521308274b7bde4fd0b926242",
+                "reference": "ed67c5d6de011ee521308274b7bde4fd0b926242",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.3",
-                "imanghafoori/eloquent-relativity": "^1.0",
                 "php": ">=7.1",
                 "railken/amethyst-api": "0.1.*",
                 "railken/bag": "^1.2",
@@ -4167,7 +4166,7 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2019-06-13T02:33:05+00:00"
+            "time": "2019-06-14T00:03:31+00:00"
         },
         {
             "name": "railken/amethyst-company",
@@ -4273,16 +4272,16 @@
         },
         {
             "name": "railken/amethyst-data-builder",
-            "version": "v0.1.18",
+            "version": "v0.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-data-builder.git",
-                "reference": "5c53c8b724779ee57f8edd257d810fc90cba855b"
+                "reference": "e5c3c565050c6c06bd59e6f977ed420206cb759f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-data-builder/zipball/5c53c8b724779ee57f8edd257d810fc90cba855b",
-                "reference": "5c53c8b724779ee57f8edd257d810fc90cba855b",
+                "url": "https://api.github.com/repos/railken/amethyst-data-builder/zipball/e5c3c565050c6c06bd59e6f977ed420206cb759f",
+                "reference": "e5c3c565050c6c06bd59e6f977ed420206cb759f",
                 "shasum": ""
             },
             "require": {
@@ -4317,20 +4316,20 @@
                 "data-builder",
                 "laravel"
             ],
-            "time": "2019-06-12T12:19:57+00:00"
+            "time": "2019-06-14T00:06:52+00:00"
         },
         {
             "name": "railken/amethyst-data-view",
-            "version": "v0.1.14",
+            "version": "v0.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-data-view.git",
-                "reference": "287282e456dfab40efd882a8799e97e089995283"
+                "reference": "4260a78e3e28104f06a18ee83cbe1e90c3d91a3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-data-view/zipball/287282e456dfab40efd882a8799e97e089995283",
-                "reference": "287282e456dfab40efd882a8799e97e089995283",
+                "url": "https://api.github.com/repos/railken/amethyst-data-view/zipball/4260a78e3e28104f06a18ee83cbe1e90c3d91a3a",
+                "reference": "4260a78e3e28104f06a18ee83cbe1e90c3d91a3a",
                 "shasum": ""
             },
             "require": {
@@ -4370,7 +4369,7 @@
                 "data-view",
                 "laravel"
             ],
-            "time": "2019-06-12T12:20:04+00:00"
+            "time": "2019-06-14T00:06:57+00:00"
         },
         {
             "name": "railken/amethyst-email-log",
@@ -4475,16 +4474,16 @@
         },
         {
             "name": "railken/amethyst-employee",
-            "version": "v0.1.8",
+            "version": "v0.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-employee.git",
-                "reference": "c30797991725f793ee2d641e88a43494368af5e2"
+                "reference": "2451e8874b5be8c54374c049471f7b7b5492e533"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-employee/zipball/c30797991725f793ee2d641e88a43494368af5e2",
-                "reference": "c30797991725f793ee2d641e88a43494368af5e2",
+                "url": "https://api.github.com/repos/railken/amethyst-employee/zipball/2451e8874b5be8c54374c049471f7b7b5492e533",
+                "reference": "2451e8874b5be8c54374c049471f7b7b5492e533",
                 "shasum": ""
             },
             "require": {
@@ -4523,7 +4522,7 @@
                 "employee",
                 "laravel"
             ],
-            "time": "2019-06-13T03:38:44+00:00"
+            "time": "2019-06-14T00:04:48+00:00"
         },
         {
             "name": "railken/amethyst-event-logger",
@@ -4627,16 +4626,16 @@
         },
         {
             "name": "railken/amethyst-file",
-            "version": "v0.1.27",
+            "version": "v0.1.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-file.git",
-                "reference": "73c10a057ffb0af3985f542218c46561233680e6"
+                "reference": "7fa484916d370525667a88d3260d28d311bdb15b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-file/zipball/73c10a057ffb0af3985f542218c46561233680e6",
-                "reference": "73c10a057ffb0af3985f542218c46561233680e6",
+                "url": "https://api.github.com/repos/railken/amethyst-file/zipball/7fa484916d370525667a88d3260d28d311bdb15b",
+                "reference": "7fa484916d370525667a88d3260d28d311bdb15b",
                 "shasum": ""
             },
             "require": {
@@ -4673,7 +4672,7 @@
                 "file",
                 "laravel"
             ],
-            "time": "2019-06-12T12:17:51+00:00"
+            "time": "2019-06-14T00:07:07+00:00"
         },
         {
             "name": "railken/amethyst-file-generator",
@@ -4781,16 +4780,16 @@
         },
         {
             "name": "railken/amethyst-geolocation",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-geolocation.git",
-                "reference": "5ec985acdd6884fcb7cc049ca29e3ea74ba4d5a9"
+                "reference": "d7f2a197872cf73f17b77a581be826733b4711ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-geolocation/zipball/5ec985acdd6884fcb7cc049ca29e3ea74ba4d5a9",
-                "reference": "5ec985acdd6884fcb7cc049ca29e3ea74ba4d5a9",
+                "url": "https://api.github.com/repos/railken/amethyst-geolocation/zipball/d7f2a197872cf73f17b77a581be826733b4711ba",
+                "reference": "d7f2a197872cf73f17b77a581be826733b4711ba",
                 "shasum": ""
             },
             "require": {
@@ -4829,7 +4828,7 @@
                 "geolocation",
                 "laravel"
             ],
-            "time": "2019-05-11T15:04:23+00:00"
+            "time": "2019-06-14T00:07:16+00:00"
         },
         {
             "name": "railken/amethyst-http-log",
@@ -5245,16 +5244,16 @@
         },
         {
             "name": "railken/amethyst-owner",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-owner.git",
-                "reference": "ea35093310aa99ee9c749662e4853d3c96f06485"
+                "reference": "c26a1ddbcc449ddb2ab1358398eb6026c3d377b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-owner/zipball/ea35093310aa99ee9c749662e4853d3c96f06485",
-                "reference": "ea35093310aa99ee9c749662e4853d3c96f06485",
+                "url": "https://api.github.com/repos/railken/amethyst-owner/zipball/c26a1ddbcc449ddb2ab1358398eb6026c3d377b1",
+                "reference": "c26a1ddbcc449ddb2ab1358398eb6026c3d377b1",
                 "shasum": ""
             },
             "require": {
@@ -5293,20 +5292,20 @@
                 "laravel",
                 "owner"
             ],
-            "time": "2019-05-14T14:41:26+00:00"
+            "time": "2019-06-14T00:07:43+00:00"
         },
         {
             "name": "railken/amethyst-permission",
-            "version": "v0.1.9",
+            "version": "v0.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-permission.git",
-                "reference": "c8c61bbf63d3ce4d4723b0f2bcf32ed264833e6e"
+                "reference": "f02ae2a360446848eb5d2989c5210e54e6e59ec0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-permission/zipball/c8c61bbf63d3ce4d4723b0f2bcf32ed264833e6e",
-                "reference": "c8c61bbf63d3ce4d4723b0f2bcf32ed264833e6e",
+                "url": "https://api.github.com/repos/railken/amethyst-permission/zipball/f02ae2a360446848eb5d2989c5210e54e6e59ec0",
+                "reference": "f02ae2a360446848eb5d2989c5210e54e6e59ec0",
                 "shasum": ""
             },
             "require": {
@@ -5346,20 +5345,20 @@
                 "laravel",
                 "permission"
             ],
-            "time": "2019-06-12T12:20:25+00:00"
+            "time": "2019-06-14T00:07:48+00:00"
         },
         {
             "name": "railken/amethyst-post",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-post.git",
-                "reference": "29978e2dc9d3c629e839311cc2e80a6422a035f7"
+                "reference": "02bc9c8df31085d78b32fce99e6f80f31a66b223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-post/zipball/29978e2dc9d3c629e839311cc2e80a6422a035f7",
-                "reference": "29978e2dc9d3c629e839311cc2e80a6422a035f7",
+                "url": "https://api.github.com/repos/railken/amethyst-post/zipball/02bc9c8df31085d78b32fce99e6f80f31a66b223",
+                "reference": "02bc9c8df31085d78b32fce99e6f80f31a66b223",
                 "shasum": ""
             },
             "require": {
@@ -5398,7 +5397,7 @@
                 "laravel",
                 "post"
             ],
-            "time": "2019-05-11T15:06:37+00:00"
+            "time": "2019-06-14T00:07:52+00:00"
         },
         {
             "name": "railken/amethyst-schedule",
@@ -5452,16 +5451,16 @@
         },
         {
             "name": "railken/amethyst-setting",
-            "version": "v0.1.9",
+            "version": "v0.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-setting.git",
-                "reference": "7759a03f12802769761e19b4f9c38c5c1d37e0af"
+                "reference": "846bba7dac23ecd52a0a42dcf1cda61128c1230d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-setting/zipball/7759a03f12802769761e19b4f9c38c5c1d37e0af",
-                "reference": "7759a03f12802769761e19b4f9c38c5c1d37e0af",
+                "url": "https://api.github.com/repos/railken/amethyst-setting/zipball/846bba7dac23ecd52a0a42dcf1cda61128c1230d",
+                "reference": "846bba7dac23ecd52a0a42dcf1cda61128c1230d",
                 "shasum": ""
             },
             "require": {
@@ -5501,20 +5500,20 @@
                 "laravel",
                 "setting"
             ],
-            "time": "2019-06-12T13:23:45+00:00"
+            "time": "2019-06-14T00:08:11+00:00"
         },
         {
             "name": "railken/amethyst-taxonomy",
-            "version": "v0.1.24",
+            "version": "v0.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/amethyst-taxonomy.git",
-                "reference": "9acb6640c179a9a51b9ac12c48a312b19fba4a9c"
+                "reference": "beedf7cfa5042b7fb4bd5d7e9c66f5c96d7b9d75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-taxonomy/zipball/9acb6640c179a9a51b9ac12c48a312b19fba4a9c",
-                "reference": "9acb6640c179a9a51b9ac12c48a312b19fba4a9c",
+                "url": "https://api.github.com/repos/railken/amethyst-taxonomy/zipball/beedf7cfa5042b7fb4bd5d7e9c66f5c96d7b9d75",
+                "reference": "beedf7cfa5042b7fb4bd5d7e9c66f5c96d7b9d75",
                 "shasum": ""
             },
             "require": {
@@ -5553,7 +5552,7 @@
             "keywords": [
                 "api"
             ],
-            "time": "2019-06-12T12:20:40+00:00"
+            "time": "2019-06-14T00:08:27+00:00"
         },
         {
             "name": "railken/amethyst-template",
@@ -5836,19 +5835,20 @@
         },
         {
             "name": "railken/eloquent-mapper",
-            "version": "v0.1.22",
+            "version": "v0.1.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/eloquent-mapper.git",
-                "reference": "6a4d939b5811e0f4dbed4f98ee7a3cff6cd425cb"
+                "reference": "d013e426a23eb12c1d6f985d625afb45ec34f675"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/eloquent-mapper/zipball/6a4d939b5811e0f4dbed4f98ee7a3cff6cd425cb",
-                "reference": "6a4d939b5811e0f4dbed4f98ee7a3cff6cd425cb",
+                "url": "https://api.github.com/repos/railken/eloquent-mapper/zipball/d013e426a23eb12c1d6f985d625afb45ec34f675",
+                "reference": "d013e426a23eb12c1d6f985d625afb45ec34f675",
                 "shasum": ""
             },
             "require": {
+                "imanghafoori/eloquent-relativity": "^1.0",
                 "php": ">=7.1",
                 "railken/bag": "^1.2",
                 "railken/cacheable": "0.1.*",
@@ -5859,6 +5859,13 @@
                 "phpunit/phpunit": "~7.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Railken\\EloquentMapper\\EloquentMapperServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Railken\\EloquentMapper\\": "src/"
@@ -5873,7 +5880,7 @@
                 "eloquent-mapper",
                 "laravel"
             ],
-            "time": "2019-06-13T02:32:28+00:00"
+            "time": "2019-06-14T00:02:27+00:00"
         },
         {
             "name": "railken/lara-eye",
@@ -10878,16 +10885,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
                 "shasum": ""
             },
             "require": {
@@ -10908,8 +10915,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Prophecy\\": "src/"
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -10937,7 +10944,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-08-05T17:53:17+00:00"
+            "time": "2019-06-13T12:50:23+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -11963,16 +11970,16 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8"
+                "reference": "11336f6f84e16a720dae9d8e6ed5019efa85a0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/1c42705be2b6c1de5904f8afacef5895cab44bf8",
-                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
+                "reference": "11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
                 "shasum": ""
             },
             "require": {
@@ -11999,7 +12006,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2019-04-04T09:56:43+00:00"
+            "time": "2019-06-13T22:48:21+00:00"
         },
         {
             "name": "webmozart/assert",
