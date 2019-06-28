@@ -14,7 +14,7 @@ class ForceJson
         $response = $next($request);
 
         if ($response instanceof JsonResponse) {
-            $response->setEncodingOptions(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+            $response->setEncodingOptions(JSON_UNESCAPED_SLASHES);
         }
 
         return $response;

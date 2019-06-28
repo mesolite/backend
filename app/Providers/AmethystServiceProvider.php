@@ -33,8 +33,10 @@ class AmethystServiceProvider extends ServiceProvider
                 event(new NotificationEvent($event->agent, config('app.name'), 'An error has occurred'));
             }
         });
+    }
 
-
+    public function boot()
+    {
         app('amethyst')->pushMorphRelation('file', 'model', 'company');
         app('amethyst')->pushMorphRelation('file', 'model', 'office');
         app('amethyst')->pushMorphRelation('file', 'model', 'employee');
