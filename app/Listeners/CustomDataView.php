@@ -42,7 +42,7 @@ class CustomDataView
 
             $config = Yaml::parse($dataView->config);
 
-            $config['options']['sections']['counter'] = [
+            $config['options']['sections']['stats'] = [
                 'extends' => 'attendance-counter'
             ];
 
