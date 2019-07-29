@@ -13,7 +13,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        \Railken\Amethyst\Events\DataViewDataUpdated::class => [
+        \Amethyst\Events\DataViewDataUpdated::class => [
             \App\Listeners\CustomDataView::class,
         ],
     ];

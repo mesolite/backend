@@ -14,13 +14,13 @@ return [
             'table'      => 'amethyst_users',
             'comment'    => 'User',
             'model'      => App\Models\User::class,
-            'schema'     => Railken\Amethyst\Schemas\UserSchema::class,
-            'repository' => Railken\Amethyst\Repositories\UserRepository::class,
-            'serializer' => Railken\Amethyst\Serializers\UserSerializer::class,
-            'validator'  => Railken\Amethyst\Validators\UserValidator::class,
-            'authorizer' => Railken\Amethyst\Authorizers\UserAuthorizer::class,
-            'faker'      => Railken\Amethyst\Fakers\UserFaker::class,
-            'manager'    => Railken\Amethyst\Managers\UserManager::class,
+            'schema'     => Amethyst\Schemas\UserSchema::class,
+            'repository' => Amethyst\Repositories\UserRepository::class,
+            'serializer' => Amethyst\Serializers\UserSerializer::class,
+            'validator'  => Amethyst\Validators\UserValidator::class,
+            'authorizer' => Amethyst\Authorizers\UserAuthorizer::class,
+            'faker'      => Amethyst\Fakers\UserFaker::class,
+            'manager'    => Amethyst\Managers\UserManager::class,
         ],
     ],
 
@@ -36,7 +36,7 @@ return [
         'admin' => [
             'user' => [
                 'enabled'    => true,
-                'controller' => Railken\Amethyst\Http\Controllers\Admin\UsersController::class,
+                'controller' => Amethyst\Http\Controllers\Admin\UsersController::class,
                 'router'     => [
                     'as'     => 'user.',
                     'prefix' => '/users',

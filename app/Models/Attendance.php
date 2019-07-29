@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Railken\Amethyst\Models\Attendance as Model;
+use Amethyst\Models\Attendance as Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Attendance extends Model

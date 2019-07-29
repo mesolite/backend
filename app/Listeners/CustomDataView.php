@@ -2,19 +2,19 @@
 
 namespace App\Listeners;
 
-use Railken\Amethyst\Events\DataViewDataUpdated;
+use Amethyst\Events\DataViewDataUpdated;
 use Illuminate\Support\Facades\Config;
-use Railken\Amethyst\Models\DataView;
+use Amethyst\Models\DataView;
 use Symfony\Component\Yaml\Yaml;
-use Railken\Amethyst\Models\ProductType;
-use Railken\Amethyst\Models\Taxonomy;
+use Amethyst\Models\ProductType;
+use Amethyst\Models\Taxonomy;
 
 class CustomDataView
 {
     /**
      * Handle the event.
      *
-     * @param \Railken\Amethysts\Events\DataViewDataUpdated $event
+     * @param \Amethysts\Events\DataViewDataUpdated $event
      */
     public function handle(DataViewDataUpdated $event)
     {
@@ -30,7 +30,7 @@ class CustomDataView
             $config = Yaml::parse($dataView->config);
 
             // perhaps this should be added as constraint in the relationship BelongsTo
-            $taxonomy = \Railken\Amethyst\Models\Taxonomy::where('name', 'Attendance Type')->first();
+            $taxonomy = \Amethyst\Models\Taxonomy::where('name', 'Attendance Type')->first();
             $config['options']['components']['type_id']['options']['query'] = 'parent.parent_id eq '.$taxonomy->id;
             $config['options']['components']['type_id']['options']['include'] = 'parent';
 

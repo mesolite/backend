@@ -5,7 +5,7 @@ namespace App\Providers;
 use App\Events\NotificationEvent;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Railken\Amethyst\Notifications\BaseNotification;
+use Amethyst\Notifications\BaseNotification;
 use Illuminate\Support\Facades\Config;
 
 class AmethystServiceProvider extends ServiceProvider
@@ -15,7 +15,7 @@ class AmethystServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Event::listen([\Railken\Amethyst\Events\ExporterGenerated::class, \Railken\Amethyst\Events\FileGenerator\FileGenerated::class], function ($event) {
+        Event::listen([\Amethyst\Events\ExporterGenerated::class, \Amethyst\Events\FileGenerator\FileGenerated::class], function ($event) {
             if (!($event->agent instanceof \Railken\Lem\Agents\SystemAgent)) {
                 $file = $event->file;
 
@@ -24,7 +24,7 @@ class AmethystServiceProvider extends ServiceProvider
             }
         });
 
-        Event::listen([\Railken\Amethyst\Events\ExporterFailed::class, \Railken\Amethyst\Events\FileGenerator\FileFailed::class], function ($event) {
+        Event::listen([\Amethyst\Events\ExporterFailed::class, \Amethyst\Events\FileGenerator\FileFailed::class], function ($event) {
             if (!($event->agent instanceof \Railken\Lem\Agents\SystemAgent)) {
                 $event->agent->notify(new BaseNotification($event, 'An error has occurred', ['error' => [
                     'message' => $event->error->message,

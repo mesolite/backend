@@ -4,8 +4,1817 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eda9b06058520c05daf83ae5a6772bb7",
+    "content-hash": "df88da4f629982b2cd0510d3a410236d",
     "packages": [
+        {
+            "name": "amethyst/account",
+            "version": "v0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/account.git",
+                "reference": "5227aa97f1d4e18d1caa60f4fab1f5cec820116a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/account/zipball/5227aa97f1d4e18d1caa60f4fab1f5cec820116a",
+                "reference": "5227aa97f1d4e18d1caa60f4fab1f5cec820116a",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/authentication": "0.1.*",
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\AccountServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "account",
+                "amethyst",
+                "amethyst-account",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:05:00+00:00"
+        },
+        {
+            "name": "amethyst/activity",
+            "version": "v0.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/activity.git",
+                "reference": "003b885d092facb14ffc1ce18ba8f58463dbf421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/activity/zipball/003b885d092facb14ffc1ce18ba8f58463dbf421",
+                "reference": "003b885d092facb14ffc1ce18ba8f58463dbf421",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "^0.1.0",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "activity",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ActivityServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "activity",
+                "amethyst",
+                "amethyst-activity",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:06:27+00:00"
+        },
+        {
+            "name": "amethyst/address",
+            "version": "v0.1.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/address.git",
+                "reference": "d83b271ee008df6aeef7e9ed5267f1dc7840a981"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/address/zipball/d83b271ee008df6aeef7e9ed5267f1dc7840a981",
+                "reference": "d83b271ee008df6aeef7e9ed5267f1dc7840a981",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/geolocation": "0.1.*",
+                "league/iso3166": "^2.1",
+                "php": ">=7.1",
+                "ronanguilloux/isocodes": "^2.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\AddressServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "api"
+            ],
+            "time": "2019-07-14T11:06:31+00:00"
+        },
+        {
+            "name": "amethyst/admin",
+            "version": "v0.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/admin.git",
+                "reference": "0d85be7e15bd8e844ae0f1ee325ecea141f1bf29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/admin/zipball/0d85be7e15bd8e844ae0f1ee325ecea141f1bf29",
+                "reference": "0d85be7e15bd8e844ae0f1ee325ecea141f1bf29",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "amethyst/event-logger": "0.1.*",
+                "hanneskod/classtools": "~1.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "admin",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\AdminServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "admin",
+                "amethyst",
+                "amethyst-admin",
+                "laravel"
+            ],
+            "time": "2019-07-10T13:57:18+00:00"
+        },
+        {
+            "name": "amethyst/api",
+            "version": "v0.1.43",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/api.git",
+                "reference": "8e918954c1a71eda5da500f243a2f5a5acf167f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/api/zipball/8e918954c1a71eda5da500f243a2f5a5acf167f3",
+                "reference": "8e918954c1a71eda5da500f243a2f5a5acf167f3",
+                "shasum": ""
+            },
+            "require": {
+                "league/fractal": "^0.17.0",
+                "php": ">=7.1",
+                "railken/bag": "^1.2",
+                "railken/eloquent-mapper": "0.1.*",
+                "railken/lara-eye": "1.2.*",
+                "railken/lem": "3.2.*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.6.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ApiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2019-07-09T22:13:46+00:00"
+        },
+        {
+            "name": "amethyst/attendance",
+            "version": "v0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/attendance.git",
+                "reference": "f12d9401227b032a17af3471de8ea83292e21533"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/attendance/zipball/f12d9401227b032a17af3471de8ea83292e21533",
+                "reference": "f12d9401227b032a17af3471de8ea83292e21533",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/activity": "0.1.*",
+                "amethyst/common": "0.1.*",
+                "amethyst/employee": "0.1.*",
+                "amethyst/office": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "attendance",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\AttendanceServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-attendance",
+                "attendance",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:06:46+00:00"
+        },
+        {
+            "name": "amethyst/attribute",
+            "version": "v0.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/attribute.git",
+                "reference": "985d32027a07a783c605bb8b137f5c8638573ea1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/attribute/zipball/985d32027a07a783c605bb8b137f5c8638573ea1",
+                "reference": "985d32027a07a783c605bb8b137f5c8638573ea1",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "attribute",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\AttributeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-attribute",
+                "attribute",
+                "laravel"
+            ],
+            "time": "2019-07-14T21:04:42+00:00"
+        },
+        {
+            "name": "amethyst/authentication",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/authentication.git",
+                "reference": "496219c44ae8a976bc3697474b2f33dbb6ef0bfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/authentication/zipball/496219c44ae8a976bc3697474b2f33dbb6ef0bfa",
+                "reference": "496219c44ae8a976bc3697474b2f33dbb6ef0bfa",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/user": "0.1.*",
+                "laravel/passport": "^6.0 || ^7.0",
+                "laravel/socialite": "^3.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "donatj/mock-webserver": "^2.0",
+                "duncan3dc/dusk": "^0.8.0",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\AuthenticationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-authentication",
+                "auth",
+                "laravel"
+            ],
+            "time": "2019-07-14T14:57:59+00:00"
+        },
+        {
+            "name": "amethyst/common",
+            "version": "v0.1.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/common.git",
+                "reference": "b854104887ab3ac519cd9f0a5f11a8091b756cfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/common/zipball/b854104887ab3ac519cd9f0a5f11a8091b756cfb",
+                "reference": "b854104887ab3ac519cd9f0a5f11a8091b756cfb",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/api": "0.1.*",
+                "doctrine/inflector": "^1.3",
+                "hanneskod/classtools": "^1.2",
+                "php": ">=7.1",
+                "railken/bag": "^1.2",
+                "railken/cacheable": "0.1.*",
+                "railken/lem": "^3.2",
+                "spatie/laravel-responsecache": "^4.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.6.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2019-07-14T21:03:36+00:00"
+        },
+        {
+            "name": "amethyst/company",
+            "version": "v0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/company.git",
+                "reference": "d7a1500f027bffae5d99d545ae01a64ed8c3173a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/company/zipball/d7a1500f027bffae5d99d545ae01a64ed8c3173a",
+                "reference": "d7a1500f027bffae5d99d545ae01a64ed8c3173a",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/legal-entity": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "company",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\CompanyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-company",
+                "company",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:07:13+00:00"
+        },
+        {
+            "name": "amethyst/config",
+            "version": "v0.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/config.git",
+                "reference": "109490403c8840543423288dbe4b907aacf999f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/config/zipball/109490403c8840543423288dbe4b907aacf999f6",
+                "reference": "109490403c8840543423288dbe4b907aacf999f6",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "^0.1",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ConfigServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Amethyst package",
+            "keywords": [
+                "amethyst",
+                "amethyst-config",
+                "config",
+                "laravel"
+            ],
+            "time": "2019-07-14T18:31:05+00:00"
+        },
+        {
+            "name": "amethyst/data-builder",
+            "version": "v0.1.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/data-builder.git",
+                "reference": "421d70772d32c11f057ad39c31fc103d6153e83f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/data-builder/zipball/421d70772d32c11f057ad39c31fc103d6153e83f",
+                "reference": "421d70772d32c11f057ad39c31fc103d6153e83f",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1",
+                "railken/template": "^1.0.0"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\DataBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-data-builder",
+                "data-builder",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:35:31+00:00"
+        },
+        {
+            "name": "amethyst/data-view",
+            "version": "v0.1.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/data-view.git",
+                "reference": "3f1017152653221cdd1517879010c43739d6e6bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/data-view/zipball/3f1017152653221cdd1517879010c43739d6e6bd",
+                "reference": "3f1017152653221cdd1517879010c43739d6e6bd",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/permission": "0.1.*",
+                "php": ">=7.1",
+                "railken/template": "1.0.*"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "data-view",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\DataViewServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-data-view",
+                "data-view",
+                "laravel"
+            ],
+            "time": "2019-07-17T23:58:37+00:00"
+        },
+        {
+            "name": "amethyst/email-log",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/email-log.git",
+                "reference": "ef4a0e31c7d97ba10158cedfcea62cac7da2bf85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/email-log/zipball/ef4a0e31c7d97ba10158cedfcea62cac7da2bf85",
+                "reference": "ef4a0e31c7d97ba10158cedfcea62cac7da2bf85",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\EmailLogServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-email-log",
+                "email-log",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:08:19+00:00"
+        },
+        {
+            "name": "amethyst/email-sender",
+            "version": "v0.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/email-sender.git",
+                "reference": "2d578e99be2051f9b01c59541ae64192bc83c75c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/email-sender/zipball/2d578e99be2051f9b01c59541ae64192bc83c75c",
+                "reference": "2d578e99be2051f9b01c59541ae64192bc83c75c",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "amethyst/file": "0.1.*",
+                "amethyst/template": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\EmailSenderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-email-sender",
+                "email-sender",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:08:25+00:00"
+        },
+        {
+            "name": "amethyst/employee",
+            "version": "v0.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/employee.git",
+                "reference": "13ba7ee6cbb1ddf959e6117e5825a0b6514af104"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/employee/zipball/13ba7ee6cbb1ddf959e6117e5825a0b6514af104",
+                "reference": "13ba7ee6cbb1ddf959e6117e5825a0b6514af104",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/office": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "employee",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\EmployeeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-employee",
+                "employee",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:08:36+00:00"
+        },
+        {
+            "name": "amethyst/event-logger",
+            "version": "v0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/event-logger.git",
+                "reference": "ede7a92813bb4efd13cc57329b5ca38e97b9333e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/event-logger/zipball/ede7a92813bb4efd13cc57329b5ca38e97b9333e",
+                "reference": "ede7a92813bb4efd13cc57329b5ca38e97b9333e",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\EventLoggerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-event-logger",
+                "event-logger",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:08:41+00:00"
+        },
+        {
+            "name": "amethyst/exporter",
+            "version": "v0.1.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/exporter.git",
+                "reference": "e47bb36cefb56e4b19d3b9ddab600ed3d6518ff6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/exporter/zipball/e47bb36cefb56e4b19d3b9ddab600ed3d6518ff6",
+                "reference": "e47bb36cefb56e4b19d3b9ddab600ed3d6518ff6",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "amethyst/file": "0.1.*",
+                "box/spout": "^2.7",
+                "php": ">=7.1",
+                "railken/template": "1.0.*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ExporterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-exporter",
+                "exporter",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:08:46+00:00"
+        },
+        {
+            "name": "amethyst/file",
+            "version": "v0.1.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/file.git",
+                "reference": "0794b040b690be2e18ece55fb2e3e0ec8f9b6a46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/file/zipball/0794b040b690be2e18ece55fb2e3e0ec8f9b6a46",
+                "reference": "0794b040b690be2e18ece55fb2e3e0ec8f9b6a46",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "dflydev/apache-mime-types": "^1.0",
+                "php": ">=7.1",
+                "ramsey/uuid": "^3.8",
+                "spatie/laravel-medialibrary": "^7.0.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\FileServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-file",
+                "file",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:08:50+00:00"
+        },
+        {
+            "name": "amethyst/file-generator",
+            "version": "v0.1.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/file-generator.git",
+                "reference": "f3d3db52f87341922e28869de52e48783a2c7a88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/file-generator/zipball/f3d3db52f87341922e28869de52e48783a2c7a88",
+                "reference": "f3d3db52f87341922e28869de52e48783a2c7a88",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "amethyst/file": "0.1.*",
+                "amethyst/template": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\FileGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-file-generator",
+                "file-generator",
+                "laravel"
+            ],
+            "time": "2019-07-18T11:27:39+00:00"
+        },
+        {
+            "name": "amethyst/geolocation",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/geolocation.git",
+                "reference": "121f20b2888f7d954844f523eefbb7b04ed37c2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/geolocation/zipball/121f20b2888f7d954844f523eefbb7b04ed37c2f",
+                "reference": "121f20b2888f7d954844f523eefbb7b04ed37c2f",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "geolocation",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\GeolocationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-geolocation",
+                "geolocation",
+                "laravel"
+            ],
+            "time": "2019-07-14T14:49:54+00:00"
+        },
+        {
+            "name": "amethyst/importer",
+            "version": "v0.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/importer.git",
+                "reference": "9dd3ad7a101591fa6a53aa5930f5c98b92ab16c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/importer/zipball/9dd3ad7a101591fa6a53aa5930f5c98b92ab16c3",
+                "reference": "9dd3ad7a101591fa6a53aa5930f5c98b92ab16c3",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "amethyst/file": "0.1.*",
+                "box/spout": "^2.7",
+                "php": ">=7.1",
+                "railken/template": "1.0.*"
+            },
+            "require-dev": {
+                "amethyst/user": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ImporterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-importer",
+                "importer",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:09:27+00:00"
+        },
+        {
+            "name": "amethyst/legal-entity",
+            "version": "v0.1.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/legal-entity.git",
+                "reference": "2b23df3cdc87e26e80b80081ffc47d03d53eb4d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/legal-entity/zipball/2b23df3cdc87e26e80b80081ffc47d03d53eb4d0",
+                "reference": "2b23df3cdc87e26e80b80081ffc47d03d53eb4d0",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/address": "0.1.*",
+                "amethyst/common": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\LegalEntityServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-legal-entity",
+                "laravel",
+                "legal-entity"
+            ],
+            "time": "2019-07-14T11:09:45+00:00"
+        },
+        {
+            "name": "amethyst/listener",
+            "version": "v0.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/listener.git",
+                "reference": "cc85cdd14c47a29ebc40d8a5534923ee3e21b9cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/listener/zipball/cc85cdd14c47a29ebc40d8a5534923ee3e21b9cf",
+                "reference": "cc85cdd14c47a29ebc40d8a5534923ee3e21b9cf",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/work": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ListenerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-listener",
+                "laravel",
+                "listener"
+            ],
+            "time": "2019-07-14T11:09:51+00:00"
+        },
+        {
+            "name": "amethyst/notification",
+            "version": "v0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/notification.git",
+                "reference": "970882d745c67ce47933c16ef76a27bcfe159607"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/notification/zipball/970882d745c67ce47933c16ef76a27bcfe159607",
+                "reference": "970882d745c67ce47933c16ef76a27bcfe159607",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/user": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\NotificationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-notification",
+                "laravel",
+                "notification"
+            ],
+            "time": "2019-07-14T11:10:02+00:00"
+        },
+        {
+            "name": "amethyst/notification-sender",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/notification-sender.git",
+                "reference": "db9ab7034fbd5442e6aa11287eaa68dc1466992e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/notification-sender/zipball/db9ab7034fbd5442e6aa11287eaa68dc1466992e",
+                "reference": "db9ab7034fbd5442e6aa11287eaa68dc1466992e",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "amethyst/notification": "0.1.*",
+                "php": ">=7.1",
+                "railken/template": "^1.0"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\NotificationSenderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-notification-sender",
+                "laravel",
+                "notification-sender"
+            ],
+            "time": "2019-07-14T18:47:36+00:00"
+        },
+        {
+            "name": "amethyst/office",
+            "version": "v0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/office.git",
+                "reference": "1481a995bc6f5dfaf55590faf9d9525f62116804"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/office/zipball/1481a995bc6f5dfaf55590faf9d9525f62116804",
+                "reference": "1481a995bc6f5dfaf55590faf9d9525f62116804",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/company": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "office",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\OfficeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-office",
+                "laravel",
+                "office"
+            ],
+            "time": "2019-07-14T11:10:21+00:00"
+        },
+        {
+            "name": "amethyst/owner",
+            "version": "v0.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/owner.git",
+                "reference": "728a3144a7fc90bc12d66badf38fef00cf5645ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/owner/zipball/728a3144a7fc90bc12d66badf38fef00cf5645ec",
+                "reference": "728a3144a7fc90bc12d66badf38fef00cf5645ec",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/authentication": "0.1.*",
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "owner",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\OwnerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-owner",
+                "laravel",
+                "owner"
+            ],
+            "time": "2019-07-14T11:10:38+00:00"
+        },
+        {
+            "name": "amethyst/permission",
+            "version": "v0.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/permission.git",
+                "reference": "4be11369a8f0fd3571fa7fa487dbbeed60713d1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/permission/zipball/4be11369a8f0fd3571fa7fa487dbbeed60713d1c",
+                "reference": "4be11369a8f0fd3571fa7fa487dbbeed60713d1c",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1",
+                "spatie/laravel-permission": "^2.37"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "permission",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-permission",
+                "laravel",
+                "permission"
+            ],
+            "time": "2019-07-14T21:04:20+00:00"
+        },
+        {
+            "name": "amethyst/post",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/post.git",
+                "reference": "c74f58b34e4e5a05586960bdb8b48ecb84759bd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/post/zipball/c74f58b34e4e5a05586960bdb8b48ecb84759bd4",
+                "reference": "c74f58b34e4e5a05586960bdb8b48ecb84759bd4",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "post",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\PostServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-post",
+                "laravel",
+                "post"
+            ],
+            "time": "2019-07-14T11:10:53+00:00"
+        },
+        {
+            "name": "amethyst/schedule",
+            "version": "v0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/schedule.git",
+                "reference": "ddebeb8f2cbc7d292028431287dd581383408159"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/schedule/zipball/ddebeb8f2cbc7d292028431287dd581383408159",
+                "reference": "ddebeb8f2cbc7d292028431287dd581383408159",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/work": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ScheduleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-schedule",
+                "laravel",
+                "schedule"
+            ],
+            "time": "2019-07-14T14:58:34+00:00"
+        },
+        {
+            "name": "amethyst/setting",
+            "version": "v0.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/setting.git",
+                "reference": "34268019ccdb3711d7a764f02dc8158f4b10d2b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/setting/zipball/34268019ccdb3711d7a764f02dc8158f4b10d2b1",
+                "reference": "34268019ccdb3711d7a764f02dc8158f4b10d2b1",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/user": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/authentication": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "setting",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\SettingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-setting",
+                "laravel",
+                "setting"
+            ],
+            "time": "2019-07-14T12:46:38+00:00"
+        },
+        {
+            "name": "amethyst/taxonomy",
+            "version": "v0.1.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/taxonomy.git",
+                "reference": "ddc43b516b8d420845c8af0dec2afa7f9986e7eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/taxonomy/zipball/ddc43b516b8d420845c8af0dec2afa7f9986e7eb",
+                "reference": "ddc43b516b8d420845c8af0dec2afa7f9986e7eb",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "friendsofphp/php-cs-fixer": "^2.8",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "taxonomy",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\TaxonomyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/",
+                    "Amethyst\\Database\\Seeds\\": "database/seeds/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "api"
+            ],
+            "time": "2019-07-14T18:57:25+00:00"
+        },
+        {
+            "name": "amethyst/template",
+            "version": "v0.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/template.git",
+                "reference": "65544d374c7f3889d3562b1659baf60872575b0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/template/zipball/65544d374c7f3889d3562b1659baf60872575b0a",
+                "reference": "65544d374c7f3889d3562b1659baf60872575b0a",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8.1",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1",
+                "spatie/pdf-to-text": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\TemplateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-template",
+                "laravel",
+                "template"
+            ],
+            "time": "2019-07-14T15:46:55+00:00"
+        },
+        {
+            "name": "amethyst/user",
+            "version": "v0.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/user.git",
+                "reference": "c5807e504d4dc176d41f6eca21302285388c6dd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/user/zipball/c5807e504d4dc176d41f6eca21302285388c6dd1",
+                "reference": "c5807e504d4dc176d41f6eca21302285388c6dd1",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "laravolt/avatar": "^2.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\UserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/",
+                    "Amethyst\\Database\\Seeds\\": "database/seeds/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-user",
+                "laravel",
+                "user"
+            ],
+            "time": "2019-07-14T11:12:39+00:00"
+        },
+        {
+            "name": "amethyst/work",
+            "version": "v0.1.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/work.git",
+                "reference": "1bdc35056b813bef8db0d4486e0093cac1131c85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/work/zipball/1bdc35056b813bef8db0d4486e0093cac1131c85",
+                "reference": "1bdc35056b813bef8db0d4486e0093cac1131c85",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/data-builder": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/user": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\WorkServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-work",
+                "laravel",
+                "work"
+            ],
+            "time": "2019-07-14T14:58:51+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "1.2.0",
@@ -700,16 +2509,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.9",
+            "version": "2.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "128cc721d771ec2c46ce59698f4ca42b73f71b25"
+                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/128cc721d771ec2c46ce59698f4ca42b73f71b25",
-                "reference": "128cc721d771ec2c46ce59698f4ca42b73f71b25",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
+                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
                 "shasum": ""
             },
             "require": {
@@ -719,7 +2528,8 @@
             "require-dev": {
                 "dominicsayers/isemail": "dev-master",
                 "phpunit/phpunit": "^4.8.35||^5.7||^6.0",
-                "satooshi/php-coveralls": "^1.0.1"
+                "satooshi/php-coveralls": "^1.0.1",
+                "symfony/phpunit-bridge": "^4.4@dev"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -753,109 +2563,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-06-23T10:14:27+00:00"
-        },
-        {
-            "name": "eloquent/composer-config-reader",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/eloquent/composer-config-reader.git",
-                "reference": "ee83a1cad8f68508f05b30c376003045a7cdfcd8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/composer-config-reader/zipball/ee83a1cad8f68508f05b30c376003045a7cdfcd8",
-                "reference": "ee83a1cad8f68508f05b30c376003045a7cdfcd8",
-                "shasum": ""
-            },
-            "require": {
-                "eloquent/enumeration": "^5",
-                "justinrainbow/json-schema": "^4",
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "eloquent/liberator": "^2",
-                "eloquent/phony": "0.14.4",
-                "phpunit/phpunit": "^4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Eloquent\\Composer\\Configuration\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Erin Millard",
-                    "email": "ezzatron@gmail.com",
-                    "homepage": "http://ezzatron.com/"
-                }
-            ],
-            "description": "A light-weight component for reading Composer configuration files.",
-            "homepage": "https://github.com/eloquent/composer-config-reader",
-            "keywords": [
-                "composer",
-                "configuration",
-                "parser",
-                "reader"
-            ],
-            "time": "2017-11-02T01:07:08+00:00"
-        },
-        {
-            "name": "eloquent/enumeration",
-            "version": "5.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/eloquent/enumeration.git",
-                "reference": "0242859435d9b135939816858348556d3cde9e3c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/eloquent/enumeration/zipball/0242859435d9b135939816858348556d3cde9e3c",
-                "reference": "0242859435d9b135939816858348556d3cde9e3c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "icecave/archer": "dev-develop",
-                "phpunit/phpunit": "^4",
-                "sami/sami": "^3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Eloquent\\Enumeration\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Erin Millard",
-                    "email": "ezzatron@gmail.com",
-                    "homepage": "http://ezzatron.com/"
-                }
-            ],
-            "description": "An enumeration implementation for PHP.",
-            "homepage": "https://github.com/eloquent/enumeration",
-            "keywords": [
-                "class",
-                "enum",
-                "enumeration",
-                "multiton",
-                "set",
-                "type"
-            ],
-            "time": "2015-11-03T22:21:38+00:00"
+            "time": "2019-07-19T20:52:08+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -990,13 +2698,13 @@
             "authors": [
                 {
                     "name": "Neuman Vong",
-                    "email": "neuman+pear@twilio.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "neuman+pear@twilio.com"
                 },
                 {
                     "name": "Anant Narayanan",
-                    "email": "anant@php.net",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "anant@php.net"
                 }
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
@@ -1005,16 +2713,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.10.14",
+            "version": "8.10.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "fd2d002edce2c21c49877a95c3d2058dac0e5cc3"
+                "reference": "e67ce0839ba448988d109c6c17718472a5d9ccff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/fd2d002edce2c21c49877a95c3d2058dac0e5cc3",
-                "reference": "fd2d002edce2c21c49877a95c3d2058dac0e5cc3",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/e67ce0839ba448988d109c6c17718472a5d9ccff",
+                "reference": "e67ce0839ba448988d109c6c17718472a5d9ccff",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +2777,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2019-06-19T10:54:35+00:00"
+            "time": "2019-07-15T14:58:27+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -1238,33 +2946,37 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.5.2",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "9f83dded91781a01c63574e387eaa769be769115"
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
-                "reference": "9f83dded91781a01c63574e387eaa769be769115",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
                 "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5"
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
+                "ext-zlib": "*",
                 "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+            },
+            "suggest": {
+                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -1301,7 +3013,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-12-04T20:46:45+00:00"
+            "time": "2019-07-01T23:21:34+00:00"
         },
         {
             "name": "hanneskod/classtools",
@@ -1563,72 +3275,6 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
-        },
-        {
-            "name": "justinrainbow/json-schema",
-            "version": "4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "d39c56a46b3ebe1f3696479966cd2b9f50aaa24f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d39c56a46b3ebe1f3696479966cd2b9f50aaa24f",
-                "reference": "d39c56a46b3ebe1f3696479966cd2b9f50aaa24f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "json-schema/json-schema-test-suite": "1.2.0",
-                "phpdocumentor/phpdocumentor": "~2",
-                "phpunit/phpunit": "^4.8.22"
-            },
-            "bin": [
-                "bin/validate-json"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JsonSchema\\": "src/JsonSchema/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bruno Prieto Reis",
-                    "email": "bruno.p.reis@gmail.com"
-                },
-                {
-                    "name": "Justin Rainbow",
-                    "email": "justin.rainbow@gmail.com"
-                },
-                {
-                    "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch"
-                },
-                {
-                    "name": "Robert Schönthal",
-                    "email": "seroscho@googlemail.com"
-                }
-            ],
-            "description": "A library to validate a json schema.",
-            "homepage": "https://github.com/justinrainbow/json-schema",
-            "keywords": [
-                "json",
-                "schema"
-            ],
-            "time": "2016-12-22T16:43:46+00:00"
         },
         {
             "name": "kylekatarnls/update-helper",
@@ -2746,52 +4392,6 @@
             "time": "2016-10-09T23:11:45+00:00"
         },
         {
-            "name": "michelf/php-markdown",
-            "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "01ab082b355bf188d907b9929cd99b2923053495"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
-                "reference": "01ab082b355bf188d907b9929cd99b2923053495",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Michelf\\": "Michelf/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Michel Fortin",
-                    "email": "michel.fortin@michelf.ca",
-                    "homepage": "https://michelf.ca/",
-                    "role": "Developer"
-                },
-                {
-                    "name": "John Gruber",
-                    "homepage": "https://daringfireball.net/"
-                }
-            ],
-            "description": "PHP Markdown",
-            "homepage": "https://michelf.ca/projects/php-markdown/",
-            "keywords": [
-                "markdown"
-            ],
-            "time": "2018-01-15T00:49:33+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "1.24.0",
             "source": {
@@ -2870,56 +4470,6 @@
             "time": "2018-11-05T09:00:11+00:00"
         },
         {
-            "name": "namshi/cuzzle",
-            "version": "2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/namshi/cuzzle.git",
-                "reference": "89849bb9c729a3d8aabf94c0b66e77c7df38abda"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/namshi/cuzzle/zipball/89849bb9c729a3d8aabf94c0b66e77c7df38abda",
-                "reference": "89849bb9c729a3d8aabf94c0b66e77c7df38abda",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.0",
-                "php": ">=5.5.0",
-                "psr/log": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.2.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Namshi\\Cuzzle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Nefedov",
-                    "email": "inefedor@gmail.com"
-                },
-                {
-                    "name": "cirpo",
-                    "email": "alessandro.cinelli@gmail.com"
-                }
-            ],
-            "description": "Get the cURL shell command from a Guzzle request",
-            "time": "2016-11-23T08:01:36+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "1.25.3",
             "source": {
@@ -2974,55 +4524,6 @@
                 "time"
             ],
             "time": "2019-06-03T17:56:44+00:00"
-        },
-        {
-            "name": "nicolab/php-ftp-client",
-            "version": "v1.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Nicolab/php-ftp-client.git",
-                "reference": "8c66e1104da1b638f5d7a9e24624a5525b459a0c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Nicolab/php-ftp-client/zipball/8c66e1104da1b638f5d7a9e24624a5525b459a0c",
-                "reference": "8c66e1104da1b638f5d7a9e24624a5525b459a0c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ftp": "*",
-                "php": ">=5.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "FtpClient": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Tallefourtane",
-                    "email": "dev@nicolab.net",
-                    "homepage": "http://nicolab.net"
-                }
-            ],
-            "description": "A flexible FTP and SSL-FTP client for PHP. This lib provides helpers easy to use to manage the remote files.",
-            "homepage": "https://github.com/Nicolab/php-ftp-client",
-            "keywords": [
-                "file",
-                "ftp",
-                "helper",
-                "lib",
-                "server",
-                "sftp",
-                "ssl",
-                "ssl-ftp"
-            ],
-            "time": "2019-04-23T09:22:37+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3262,16 +4763,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.20",
+            "version": "2.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "d6819a55b05e123db1e881d8b230d57f912126be"
+                "reference": "9f1287e68b3f283339a9f98f67515dd619e5bf9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d6819a55b05e123db1e881d8b230d57f912126be",
-                "reference": "d6819a55b05e123db1e881d8b230d57f912126be",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/9f1287e68b3f283339a9f98f67515dd619e5bf9d",
+                "reference": "9f1287e68b3f283339a9f98f67515dd619e5bf9d",
                 "shasum": ""
             },
             "require": {
@@ -3350,7 +4851,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2019-06-23T16:33:11+00:00"
+            "time": "2019-07-12T12:53:49+00:00"
         },
         {
             "name": "predis/predis",
@@ -3717,1982 +5218,6 @@
             "time": "2018-10-13T15:16:03+00:00"
         },
         {
-            "name": "railken/amethyst-account",
-            "version": "v0.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-account.git",
-                "reference": "0368faf0c05eabe916e4d9b18546420c0fe97a79"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-account/zipball/0368faf0c05eabe916e4d9b18546420c0fe97a79",
-                "reference": "0368faf0c05eabe916e4d9b18546420c0fe97a79",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-authentication": "0.1.*",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\AccountServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "account",
-                "amethyst",
-                "amethyst-account",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-activity",
-            "version": "v0.1.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-activity.git",
-                "reference": "e2deff40e47e3393f2e450800b63188db3c0bae1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-activity/zipball/e2deff40e47e3393f2e450800b63188db3c0bae1",
-                "reference": "e2deff40e47e3393f2e450800b63188db3c0bae1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "^0.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "activity",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ActivityServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "activity",
-                "amethyst",
-                "amethyst-activity",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-address",
-            "version": "v0.1.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-address.git",
-                "reference": "2c5aa8383a733c65f16ff75109453e046731efc9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-address/zipball/2c5aa8383a733c65f16ff75109453e046731efc9",
-                "reference": "2c5aa8383a733c65f16ff75109453e046731efc9",
-                "shasum": ""
-            },
-            "require": {
-                "league/iso3166": "^2.1",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-geolocation": "0.1.*",
-                "ronanguilloux/isocodes": "^2.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\AddressServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "api"
-            ],
-            "time": "2019-06-23T20:22:09+00:00"
-        },
-        {
-            "name": "railken/amethyst-admin",
-            "version": "v0.1.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-admin.git",
-                "reference": "6a033cd6db67dca0c03745d22f32f32e84ce7400"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-admin/zipball/6a033cd6db67dca0c03745d22f32f32e84ce7400",
-                "reference": "6a033cd6db67dca0c03745d22f32f32e84ce7400",
-                "shasum": ""
-            },
-            "require": {
-                "hanneskod/classtools": "~1.0",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-event-logger": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "admin",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\AdminServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "admin",
-                "amethyst",
-                "amethyst-admin",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-api",
-            "version": "v0.1.42",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-api.git",
-                "reference": "c5991fce3a1127cebc42b3096873ab72963a8565"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-api/zipball/c5991fce3a1127cebc42b3096873ab72963a8565",
-                "reference": "c5991fce3a1127cebc42b3096873ab72963a8565",
-                "shasum": ""
-            },
-            "require": {
-                "league/fractal": "^0.17.0",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "railken/eloquent-mapper": "0.1.*",
-                "railken/lara-eye": "1.2.*",
-                "railken/lem": "3.2.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.6.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ApiServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "laravel"
-            ],
-            "time": "2019-06-23T13:01:26+00:00"
-        },
-        {
-            "name": "railken/amethyst-attendance",
-            "version": "v0.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-attendance.git",
-                "reference": "8bb4866d2c075c4b7dd8ff974eb5e5992d3e679a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-attendance/zipball/8bb4866d2c075c4b7dd8ff974eb5e5992d3e679a",
-                "reference": "8bb4866d2c075c4b7dd8ff974eb5e5992d3e679a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-activity": "0.1.*",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-employee": "0.1.*",
-                "railken/amethyst-office": "0.1.*",
-                "railken/amethyst-taxonomy": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "attendance",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\AttendanceServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-attendance",
-                "attendance",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-attribute",
-            "version": "v0.1.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-attribute.git",
-                "reference": "2a5fd141d9192d8cf13cc97db15566dea2d21b97"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-attribute/zipball/2a5fd141d9192d8cf13cc97db15566dea2d21b97",
-                "reference": "2a5fd141d9192d8cf13cc97db15566dea2d21b97",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "attribute",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\AttributeServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-attribute",
-                "attribute",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-authentication",
-            "version": "v0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-authentication.git",
-                "reference": "8796af3f97cb3932016b09b5369b13de02e47e8f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-authentication/zipball/8796af3f97cb3932016b09b5369b13de02e47e8f",
-                "reference": "8796af3f97cb3932016b09b5369b13de02e47e8f",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/passport": "^6.0 || ^7.0",
-                "laravel/socialite": "^3.0",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-user": "0.1.*"
-            },
-            "require-dev": {
-                "donatj/mock-webserver": "^2.0",
-                "duncan3dc/dusk": "^0.8.0",
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\AuthenticationServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-authentication",
-                "auth",
-                "laravel"
-            ],
-            "time": "2019-06-23T18:55:34+00:00"
-        },
-        {
-            "name": "railken/amethyst-common",
-            "version": "v0.1.37",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-common.git",
-                "reference": "fb949fc2ef31a93835ce8b89c41b1879e51a54b7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-common/zipball/fb949fc2ef31a93835ce8b89c41b1879e51a54b7",
-                "reference": "fb949fc2ef31a93835ce8b89c41b1879e51a54b7",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/inflector": "^1.3",
-                "php": ">=7.1",
-                "railken/amethyst-api": "0.1.*",
-                "railken/bag": "^1.2",
-                "railken/cacheable": "0.1.*",
-                "railken/doc-amethyst": "0.1.*",
-                "railken/lem": "^3.2",
-                "spatie/laravel-responsecache": "^4.4"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.6.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\Common\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "laravel"
-            ],
-            "time": "2019-06-20T11:29:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-company",
-            "version": "v0.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-company.git",
-                "reference": "47bcbd7d51c8473a9b741441adc8c8ee812f9638"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-company/zipball/47bcbd7d51c8473a9b741441adc8c8ee812f9638",
-                "reference": "47bcbd7d51c8473a9b741441adc8c8ee812f9638",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-legal-entity": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "company",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\CompanyServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-company",
-                "company",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-config",
-            "version": "v0.1.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-config.git",
-                "reference": "ff1acbf07eb602433b313d775fffc34f8fba36cd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-config/zipball/ff1acbf07eb602433b313d775fffc34f8fba36cd",
-                "reference": "ff1acbf07eb602433b313d775fffc34f8fba36cd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "^0.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ConfigServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Amethyst package",
-            "keywords": [
-                "amethyst",
-                "amethyst-config",
-                "config",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-data-builder",
-            "version": "v0.1.20",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-data-builder.git",
-                "reference": "209f86c1b75c23d952dfc410b7a054f3c1df7ac2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-data-builder/zipball/209f86c1b75c23d952dfc410b7a054f3c1df7ac2",
-                "reference": "209f86c1b75c23d952dfc410b7a054f3c1df7ac2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/template": "^1.0.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\DataBuilderServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-data-builder",
-                "data-builder",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:14:04+00:00"
-        },
-        {
-            "name": "railken/amethyst-data-view",
-            "version": "v0.1.18",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-data-view.git",
-                "reference": "901bf6a9754f0a68dbc0471ce10879e82829bd29"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-data-view/zipball/901bf6a9754f0a68dbc0471ce10879e82829bd29",
-                "reference": "901bf6a9754f0a68dbc0471ce10879e82829bd29",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-permission": "0.1.*",
-                "railken/template": "1.0.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "data-view",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\DataViewServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-data-view",
-                "data-view",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-email-log",
-            "version": "v0.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-email-log.git",
-                "reference": "2652641639ae698f2e63dd6e6eb5bb85b0b1f59d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-email-log/zipball/2652641639ae698f2e63dd6e6eb5bb85b0b1f59d",
-                "reference": "2652641639ae698f2e63dd6e6eb5bb85b0b1f59d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "3.6.*",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\EmailLogServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-email-log",
-                "email-log",
-                "laravel"
-            ],
-            "time": "2019-05-11T15:02:44+00:00"
-        },
-        {
-            "name": "railken/amethyst-email-sender",
-            "version": "v0.1.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-email-sender.git",
-                "reference": "84d97026f72b467db0a9675b99cf4270c2ec451c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-email-sender/zipball/84d97026f72b467db0a9675b99cf4270c2ec451c",
-                "reference": "84d97026f72b467db0a9675b99cf4270c2ec451c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-file": "0.1.*",
-                "railken/amethyst-template": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\EmailSenderServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-email-sender",
-                "email-sender",
-                "laravel"
-            ],
-            "time": "2019-06-23T19:38:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-employee",
-            "version": "v0.1.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-employee.git",
-                "reference": "2df18cb425f0b5ead3925171e55bd55f22754a33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-employee/zipball/2df18cb425f0b5ead3925171e55bd55f22754a33",
-                "reference": "2df18cb425f0b5ead3925171e55bd55f22754a33",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-office": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "employee",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\EmployeeServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-employee",
-                "employee",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-event-logger",
-            "version": "v0.1.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-event-logger.git",
-                "reference": "4f80d4159b138d91df7f036f812135e1ecd0ac90"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-event-logger/zipball/4f80d4159b138d91df7f036f812135e1ecd0ac90",
-                "reference": "4f80d4159b138d91df7f036f812135e1ecd0ac90",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\EventLoggerServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-event-logger",
-                "event-logger",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:18+00:00"
-        },
-        {
-            "name": "railken/amethyst-exporter",
-            "version": "v0.1.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-exporter.git",
-                "reference": "2924f0e749175d62a700163da9544935189cccf3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-exporter/zipball/2924f0e749175d62a700163da9544935189cccf3",
-                "reference": "2924f0e749175d62a700163da9544935189cccf3",
-                "shasum": ""
-            },
-            "require": {
-                "box/spout": "^2.7",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-file": "0.1.*",
-                "railken/template": "1.0.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ExporterServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-exporter",
-                "exporter",
-                "laravel"
-            ],
-            "time": "2019-06-23T19:36:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-file",
-            "version": "v0.1.29",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-file.git",
-                "reference": "8b7157e3bd710d2b38609441575f4e80bd5cb6d5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-file/zipball/8b7157e3bd710d2b38609441575f4e80bd5cb6d5",
-                "reference": "8b7157e3bd710d2b38609441575f4e80bd5cb6d5",
-                "shasum": ""
-            },
-            "require": {
-                "dflydev/apache-mime-types": "^1.0",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "ramsey/uuid": "^3.8",
-                "spatie/laravel-medialibrary": "^7.0.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\FileServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-file",
-                "file",
-                "laravel"
-            ],
-            "time": "2019-06-23T19:32:53+00:00"
-        },
-        {
-            "name": "railken/amethyst-file-generator",
-            "version": "v0.1.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-file-generator.git",
-                "reference": "a84c15456e2bf9926656e337e5cca453235fcfd8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-file-generator/zipball/a84c15456e2bf9926656e337e5cca453235fcfd8",
-                "reference": "a84c15456e2bf9926656e337e5cca453235fcfd8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-file": "0.1.*",
-                "railken/amethyst-template": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\FileGeneratorServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-file-generator",
-                "file-generator",
-                "laravel"
-            ],
-            "time": "2019-06-23T19:37:15+00:00"
-        },
-        {
-            "name": "railken/amethyst-ftp",
-            "version": "v0.1.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-ftp.git",
-                "reference": "c61a63136ff608678ac531e950487c8af3e2c305"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-ftp/zipball/c61a63136ff608678ac531e950487c8af3e2c305",
-                "reference": "c61a63136ff608678ac531e950487c8af3e2c305",
-                "shasum": ""
-            },
-            "require": {
-                "nicolab/php-ftp-client": "^1.4",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-exporter": "0.1.*",
-                "railken/amethyst-file-generator": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-user": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\FtpServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-ftp",
-                "ftp",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-geolocation",
-            "version": "v0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-geolocation.git",
-                "reference": "edcb8da59cc6be7145e2ad13667dde777a996e4a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-geolocation/zipball/edcb8da59cc6be7145e2ad13667dde777a996e4a",
-                "reference": "edcb8da59cc6be7145e2ad13667dde777a996e4a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "geolocation",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\GeolocationServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-geolocation",
-                "geolocation",
-                "laravel"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-http-log",
-            "version": "v0.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-http-log.git",
-                "reference": "e038e2bac87d302f1b9f584bcf608a03625be364"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-http-log/zipball/e038e2bac87d302f1b9f584bcf608a03625be364",
-                "reference": "e038e2bac87d302f1b9f584bcf608a03625be364",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.6.*",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "http-log",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\HttpLogServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-http-log",
-                "http-log",
-                "laravel"
-            ],
-            "time": "2019-05-11T15:04:31+00:00"
-        },
-        {
-            "name": "railken/amethyst-http-requester",
-            "version": "v0.1.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-http-requester.git",
-                "reference": "5816d273be4c78c1520f4934980f6a44acbc1446"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-http-requester/zipball/5816d273be4c78c1520f4934980f6a44acbc1446",
-                "reference": "5816d273be4c78c1520f4934980f6a44acbc1446",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.3",
-                "namshi/cuzzle": "^2.0",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-http-log": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "http-requester",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\HttpRequesterServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-http-requester",
-                "http-requester",
-                "laravel"
-            ],
-            "time": "2019-06-23T19:34:51+00:00"
-        },
-        {
-            "name": "railken/amethyst-importer",
-            "version": "v0.1.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-importer.git",
-                "reference": "e3208db32a3d75da47a965befdead18e43efb5fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-importer/zipball/e3208db32a3d75da47a965befdead18e43efb5fe",
-                "reference": "e3208db32a3d75da47a965befdead18e43efb5fe",
-                "shasum": ""
-            },
-            "require": {
-                "box/spout": "^2.7",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-file": "0.1.*",
-                "railken/template": "1.0.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-user": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ImporterServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-importer",
-                "importer",
-                "laravel"
-            ],
-            "time": "2019-06-23T20:22:36+00:00"
-        },
-        {
-            "name": "railken/amethyst-legal-entity",
-            "version": "v0.1.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-legal-entity.git",
-                "reference": "301a553a5cda2bde712c714f784f491894446a69"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-legal-entity/zipball/301a553a5cda2bde712c714f784f491894446a69",
-                "reference": "301a553a5cda2bde712c714f784f491894446a69",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-address": "0.1.*",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-taxonomy": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\LegalEntityServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-legal-entity",
-                "laravel",
-                "legal-entity"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-listener",
-            "version": "v0.1.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-listener.git",
-                "reference": "2a41729975386ecb60738748ba9a91654f8db012"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-listener/zipball/2a41729975386ecb60738748ba9a91654f8db012",
-                "reference": "2a41729975386ecb60738748ba9a91654f8db012",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-work": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ListenerServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-listener",
-                "laravel",
-                "listener"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-notification",
-            "version": "v0.1.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-notification.git",
-                "reference": "05927007943b56cd9938ac9b2495fc6bcb798f35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-notification/zipball/05927007943b56cd9938ac9b2495fc6bcb798f35",
-                "reference": "05927007943b56cd9938ac9b2495fc6bcb798f35",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-user": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.6.*",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\NotificationServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-notification",
-                "laravel",
-                "notification"
-            ],
-            "time": "2019-05-31T16:18:57+00:00"
-        },
-        {
-            "name": "railken/amethyst-notification-sender",
-            "version": "v0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-notification-sender.git",
-                "reference": "c658a492015493fb14a9fc690e47219496a11a54"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-notification-sender/zipball/c658a492015493fb14a9fc690e47219496a11a54",
-                "reference": "c658a492015493fb14a9fc690e47219496a11a54",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-notification": "0.1.*",
-                "railken/amethyst-user": "0.1.*",
-                "railken/template": "^1.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\NotificationSenderServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-notification-sender",
-                "laravel",
-                "notification-sender"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-office",
-            "version": "v0.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-office.git",
-                "reference": "8c672c53315c69645947e105568e8bb31c0a741b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-office/zipball/8c672c53315c69645947e105568e8bb31c0a741b",
-                "reference": "8c672c53315c69645947e105568e8bb31c0a741b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-company": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "office",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\OfficeServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-office",
-                "laravel",
-                "office"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-owner",
-            "version": "v0.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-owner.git",
-                "reference": "19ddd59e3fad448ec84794c730c5a4e56f6f9283"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-owner/zipball/19ddd59e3fad448ec84794c730c5a4e56f6f9283",
-                "reference": "19ddd59e3fad448ec84794c730c5a4e56f6f9283",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-authentication": "0.1.*",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "owner",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\OwnerServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-owner",
-                "laravel",
-                "owner"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-permission",
-            "version": "v0.1.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-permission.git",
-                "reference": "87e2128a2ef28191d20f2cd8f8a7cf970d22435e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-permission/zipball/87e2128a2ef28191d20f2cd8f8a7cf970d22435e",
-                "reference": "87e2128a2ef28191d20f2cd8f8a7cf970d22435e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "spatie/laravel-permission": "^2.37"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "permission",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\PermissionServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-permission",
-                "laravel",
-                "permission"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-post",
-            "version": "v0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-post.git",
-                "reference": "b502709b8cf5d4eed8156871a3ef6c32eccef5d4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-post/zipball/b502709b8cf5d4eed8156871a3ef6c32eccef5d4",
-                "reference": "b502709b8cf5d4eed8156871a3ef6c32eccef5d4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "post",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\PostServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-post",
-                "laravel",
-                "post"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-schedule",
-            "version": "v0.1.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-schedule.git",
-                "reference": "913d4589c3df0faaa427904c6cba3cde9d0e96d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-schedule/zipball/913d4589c3df0faaa427904c6cba3cde9d0e96d2",
-                "reference": "913d4589c3df0faaa427904c6cba3cde9d0e96d2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-work": "0.1.*"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "3.6.*",
-                "phpstan/phpstan": "^0.10",
-                "phpunit/phpunit": "~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\ScheduleServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-schedule",
-                "laravel",
-                "schedule"
-            ],
-            "time": "2019-05-30T11:32:37+00:00"
-        },
-        {
-            "name": "railken/amethyst-setting",
-            "version": "v0.1.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-setting.git",
-                "reference": "37e96d04a35a040f1a2b8f4eaf47a1c3a92dbd9c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-setting/zipball/37e96d04a35a040f1a2b8f4eaf47a1c3a92dbd9c",
-                "reference": "37e96d04a35a040f1a2b8f4eaf47a1c3a92dbd9c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-user": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-authentication": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "setting",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\SettingServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-setting",
-                "laravel",
-                "setting"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-taxonomy",
-            "version": "v0.1.28",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-taxonomy.git",
-                "reference": "554e325342bd308d2b2a3f6bfcb6d66d8a5218b3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-taxonomy/zipball/554e325342bd308d2b2a3f6bfcb6d66d8a5218b3",
-                "reference": "554e325342bd308d2b2a3f6bfcb6d66d8a5218b3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8",
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "amethyst": {
-                    "package": "taxonomy",
-                    "namespace": "Railken\\Amethyst"
-                },
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\TaxonomyServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/",
-                    "Railken\\Amethyst\\Database\\Seeds\\": "database/seeds/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "api"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-template",
-            "version": "v0.1.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-template.git",
-                "reference": "d122fbc24a9296c4b63d65c7087d5d5737750e8a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-template/zipball/d122fbc24a9296c4b63d65c7087d5d5737750e8a",
-                "reference": "d122fbc24a9296c4b63d65c7087d5d5737750e8a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.8.1",
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "spatie/pdf-to-text": "^1.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\TemplateServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-template",
-                "laravel",
-                "template"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
-            "name": "railken/amethyst-user",
-            "version": "v0.1.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-user.git",
-                "reference": "f205038667726dd50ed6d347fd893a59338fd4f6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-user/zipball/f205038667726dd50ed6d347fd893a59338fd4f6",
-                "reference": "f205038667726dd50ed6d347fd893a59338fd4f6",
-                "shasum": ""
-            },
-            "require": {
-                "laravolt/avatar": "^2.0",
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\UserServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/",
-                    "Railken\\Amethyst\\Database\\Seeds\\": "database/seeds/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-user",
-                "laravel",
-                "user"
-            ],
-            "time": "2019-06-23T20:23:00+00:00"
-        },
-        {
-            "name": "railken/amethyst-work",
-            "version": "v0.1.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/amethyst-work.git",
-                "reference": "29bb52b251734fae88127f18a091b552462c7481"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/amethyst-work/zipball/29bb52b251734fae88127f18a091b552462c7481",
-                "reference": "29bb52b251734fae88127f18a091b552462c7481",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "railken/amethyst-common": "0.1.*",
-                "railken/amethyst-data-builder": "0.1.*",
-                "railken/amethyst-email-sender": "0.1.*",
-                "railken/amethyst-file-generator": "0.1.*",
-                "railken/amethyst-ftp": "0.1.*",
-                "railken/amethyst-http-requester": "0.1.*",
-                "railken/amethyst-importer": "0.1.*",
-                "railken/amethyst-notification-sender": "0.1.*"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-user": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Providers\\WorkServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-work",
-                "laravel",
-                "work"
-            ],
-            "time": "2019-06-23T16:58:19+00:00"
-        },
-        {
             "name": "railken/bag",
             "version": "v1.2.12",
             "source": {
@@ -5760,72 +5285,17 @@
             "time": "2019-06-10T07:32:20+00:00"
         },
         {
-            "name": "railken/doc-amethyst",
-            "version": "v0.1.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/railken/doc-amethyst.git",
-                "reference": "89fff0c09fc56be3c06a3cd9aa8e3e61e3747177"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/railken/doc-amethyst/zipball/89fff0c09fc56be3c06a3cd9aa8e3e61e3747177",
-                "reference": "89fff0c09fc56be3c06a3cd9aa8e3e61e3747177",
-                "shasum": ""
-            },
-            "require": {
-                "eloquent/composer-config-reader": "^2.1",
-                "hanneskod/classtools": "~1.0",
-                "michelf/php-markdown": "^1.8",
-                "php": ">=7.1",
-                "railken/bag": "^1.2",
-                "rcrowe/twigbridge": "^0.9.6"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.6.*",
-                "phpunit/phpunit": "~7.1",
-                "railken/amethyst-foo": "0.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Railken\\Amethyst\\Documentation\\GeneratorServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Railken\\Amethyst\\Documentation\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "amethyst",
-                "amethyst-documentation-generator",
-                "doc",
-                "documentation",
-                "documentation-generator",
-                "generator",
-                "laravel"
-            ],
-            "time": "2019-06-23T15:04:33+00:00"
-        },
-        {
             "name": "railken/eloquent-mapper",
-            "version": "v0.1.24",
+            "version": "v0.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/eloquent-mapper.git",
-                "reference": "137b8fc2ba74349de22003ea5daa6fdc66e1bd8f"
+                "reference": "e98abdb39bd96bd499a0abedce3b44eacfb5c3d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/eloquent-mapper/zipball/137b8fc2ba74349de22003ea5daa6fdc66e1bd8f",
-                "reference": "137b8fc2ba74349de22003ea5daa6fdc66e1bd8f",
+                "url": "https://api.github.com/repos/railken/eloquent-mapper/zipball/e98abdb39bd96bd499a0abedce3b44eacfb5c3d0",
+                "reference": "e98abdb39bd96bd499a0abedce3b44eacfb5c3d0",
                 "shasum": ""
             },
             "require": {
@@ -5861,7 +5331,7 @@
                 "eloquent-mapper",
                 "laravel"
             ],
-            "time": "2019-06-17T01:44:33+00:00"
+            "time": "2019-07-09T10:24:22+00:00"
         },
         {
             "name": "railken/lara-eye",
@@ -5953,16 +5423,16 @@
         },
         {
             "name": "railken/lem",
-            "version": "v3.2.50",
+            "version": "v3.2.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/railken/lem.git",
-                "reference": "3a994fdc921119fc936f07f439c57f80e69c2071"
+                "reference": "cf7127d5a593dc8624a73e504370a361496b9322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/railken/lem/zipball/3a994fdc921119fc936f07f439c57f80e69c2071",
-                "reference": "3a994fdc921119fc936f07f439c57f80e69c2071",
+                "url": "https://api.github.com/repos/railken/lem/zipball/cf7127d5a593dc8624a73e504370a361496b9322",
+                "reference": "cf7127d5a593dc8624a73e504370a361496b9322",
                 "shasum": ""
             },
             "require": {
@@ -6000,7 +5470,7 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2019-05-23T21:00:47+00:00"
+            "time": "2019-07-14T15:38:16+00:00"
         },
         {
             "name": "railken/search-query",
@@ -6093,24 +5563,24 @@
         },
         {
             "name": "ralouphie/getallheaders",
-            "version": "2.0.5",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
-                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7.0",
-                "satooshi/php-coveralls": ">=1.0"
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
             },
             "type": "library",
             "autoload": {
@@ -6129,7 +5599,7 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-            "time": "2016-02-11T07:05:27+00:00"
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -6866,16 +6336,16 @@
         },
         {
             "name": "spatie/temporary-directory",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/temporary-directory.git",
-                "reference": "5e1799fa2297363ebfb4df296fea90afbd4ef9b7"
+                "reference": "539d0856c5d6344619b3c5ab472e1ff6c655df5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/5e1799fa2297363ebfb4df296fea90afbd4ef9b7",
-                "reference": "5e1799fa2297363ebfb4df296fea90afbd4ef9b7",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/539d0856c5d6344619b3c5ab472e1ff6c655df5a",
+                "reference": "539d0856c5d6344619b3c5ab472e1ff6c655df5a",
                 "shasum": ""
             },
             "require": {
@@ -6908,7 +6378,7 @@
                 "spatie",
                 "temporary-directory"
             ],
-            "time": "2018-04-12T09:34:43+00:00"
+            "time": "2019-07-16T20:39:53+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -9422,6 +8892,57 @@
     ],
     "packages-dev": [
         {
+            "name": "amethyst/foo",
+            "version": "v0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/foo.git",
+                "reference": "06a72725fd81867c81b42789bc188f5225b633ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/foo/zipball/06a72725fd81867c81b42789bc188f5225b633ce",
+                "reference": "06a72725fd81867c81b42789bc188f5225b633ce",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "foo",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\FooServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-foo",
+                "foo",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:09:01+00:00"
+        },
+        {
             "name": "barryvdh/laravel-debugbar",
             "version": "v3.2.4",
             "source": {
@@ -9591,16 +9112,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "1a1a1044ad00e285bd2825fac4c3a0443d90ad33"
+                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/1a1a1044ad00e285bd2825fac4c3a0443d90ad33",
-                "reference": "1a1a1044ad00e285bd2825fac4c3a0443d90ad33",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/6fb502c23885701a991b0bba974b1a8eb6673577",
+                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577",
                 "shasum": ""
             },
             "require": {
@@ -9648,7 +9169,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2019-06-23T09:00:00+00:00"
+            "time": "2019-07-04T09:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -10171,7 +9692,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+            "description": "? Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -10231,7 +9752,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -10244,16 +9765,16 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "acff8b136fad84b860a626d133e791f95781f9f5"
+                "reference": "aea6e81437bb238e5f0e5b5ce06337433908e63b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/acff8b136fad84b860a626d133e791f95781f9f5",
-                "reference": "acff8b136fad84b860a626d133e791f95781f9f5",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/aea6e81437bb238e5f0e5b5ce06337433908e63b",
+                "reference": "aea6e81437bb238e5f0e5b5ce06337433908e63b",
                 "shasum": ""
             },
             "require": {
@@ -10299,7 +9820,7 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2019-03-15T03:41:13+00:00"
+            "time": "2019-07-05T13:01:56+00:00"
         },
         {
             "name": "nette/robot-loader",
@@ -11252,16 +10773,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18"
+                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c99e3be9d3e85f60646f152f9002d46ed7770d18",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
+                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
                 "shasum": ""
             },
             "require": {
@@ -11297,20 +10818,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-10-30T05:52:18+00:00"
+            "time": "2019-07-08T05:24:54+00:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.13",
+            "version": "7.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b9278591caa8630127f96c63b598712b699e671c"
+                "reference": "2834789aeb9ac182ad69bfdf9ae91856a59945ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b9278591caa8630127f96c63b598712b699e671c",
-                "reference": "b9278591caa8630127f96c63b598712b699e671c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2834789aeb9ac182ad69bfdf9ae91856a59945ff",
+                "reference": "2834789aeb9ac182ad69bfdf9ae91856a59945ff",
                 "shasum": ""
             },
             "require": {
@@ -11381,7 +10902,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-06-19T12:01:51+00:00"
+            "time": "2019-07-15T06:24:08+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

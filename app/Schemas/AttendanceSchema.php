@@ -2,9 +2,9 @@
 
 namespace App\Schemas;
 
-use Railken\Amethyst\Schemas\AttendanceSchema as Schema;
+use Amethyst\Schemas\AttendanceSchema as Schema;
 use Railken\Lem\Attributes;
-use Railken\Amethyst\Managers\TaxonomyManager;
+use Amethyst\Managers\TaxonomyManager;
 
 class AttendanceSchema extends Schema
 {

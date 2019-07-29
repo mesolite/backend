@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
-use Railken\Amethyst\Contracts\DataBuilderContract;
+use Amethyst\Contracts\DataBuilderContract;
 
 class IndexController extends Controller
 {

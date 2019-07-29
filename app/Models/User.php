@@ -7,7 +7,7 @@ use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
-use Railken\Amethyst\Models\User as BaseUser;
+use Amethyst\Models\User as BaseUser;
 use Spatie\Permission\Traits\HasRoles;
 use Railken\Lem\Contracts\AgentContract;
 

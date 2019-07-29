@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Railken\Amethyst\Models\Taxonomy;
+use Amethyst\Models\Taxonomy;
 
 class Install extends Command
 {
@@ -49,11 +49,11 @@ class Install extends Command
         $this->call('amethyst:data-builder:seed');
         $this->call('amethyst:exporter:seed');
         $this->call('amethyst:importer:seed');
-        $this->call('db:seed', ['--class' => \Railken\Amethyst\Database\Seeds\TaxonomySeeder::class]);
+        $this->call('db:seed', ['--class' => \Amethyst\Database\Seeds\TaxonomySeeder::class]);
 
-        $parentAttendance = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Attendance Type']);
+        $parentAttendance = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Attendance Type']);
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Festività', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Festività', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "FEGO", "name" => "FESTIVITA' GODUTA", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "FELA", "name" => "FESTIVITA' LAVORATA", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "FENA", "name" => "FESTIVITA' ACCANTONATE A ROL", "parent_id" => $parent->id]);
@@ -62,7 +62,7 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "FEPN", "name" => "FESTIVITA' PATRONO NON GODUTA", "parent_id" => $parent->id]);
 
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Permesso', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Permesso', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "PMCM", "name" => "PERMESSO PER CURE MEDICHE", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "PMEL", "name" => "PERMESSO ELEZIONI", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "PMES", "name" => "PERMESSO ESAMI", "parent_id" => $parent->id]);
@@ -77,7 +77,7 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "PNAT", "name" => "PERMESSO ESAMI PRENATALI", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "PCIV", "name" => "PERMESSO PROTEZIONE CIVILE", "parent_id" => $parent->id]);
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Presenza', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Presenza', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "SD", "name" => "STR. DIURNO", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "SD6", "name" => "STR. DIURNO 6^ GIORN", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "SDD", "name" => "STR. DIURNO DOM.", "parent_id" => $parent->id]);
@@ -108,7 +108,7 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "TR", "name" => "TRASFERTA", "parent_id" => $parent->id]);
 
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Cassa Integrazione', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Cassa Integrazione', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "CGDA", "name" => "CIG IN DEROGA  CON ANTICIPO", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "CGDD", "name" => "CIG IN DEROGA  AUTORIZZATA", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "CGDO", "name" => "CIG ORDINARIA/EDILI EVENTI ATM. AUTORIZZATA", "parent_id" => $parent->id]);
@@ -124,7 +124,7 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "CINI", "name" => "CIG ORDINARIA NON INTEGRATA", "parent_id" => $parent->id]);
 
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Assenza', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Assenza', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "ASS0", "name" => "ASSENZA INGIUSTIFICATA", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "ASS1", "name" => "ASS. NON RETRIBUITA NON SCALA ORE/GG RETRIBUITI", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "ASS2", "name" => "ASS. NON RETRIBUITA SCALA ORE/GG RETRIBUITI", "parent_id" => $parent->id]);
@@ -135,7 +135,7 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "EDI1", "name" => "ASSENZA GIUSTIFICATA PROSPETTO EDILI VOCE 0839", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "EDIL", "name" => "ASSENZA GIUSTIFICATA PROSPETTO EDILI VOCE 0839", "parent_id" => $parent->id]);
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Congedo', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Congedo', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "CMT1", "name" => "CONGEDO MATRIMONIALE DITTA", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "CMT2", "name" => "CONGEDO MATRIMONIALE INPS", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "CPAF", "name" => "CONGEDO PATERNITA' FACOLTATIVA", "parent_id" => $parent->id]);
@@ -146,7 +146,7 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "PAP", "name" => "CONGEDO PARTO PREMATURO", "parent_id" => $parent->id]);
 
 
-        $parent = \Railken\Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Donazioni', 'parent_id' => $parentAttendance->id]);
+        $parent = \Amethyst\Models\Taxonomy::firstOrCreate(['name' => 'Donazioni', 'parent_id' => $parentAttendance->id]);
         Taxonomy::firstOrCreate(['code' => "DMO", "name" => "DON. MIDOLLO OSSEO CON MAGG 1,20", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "DMO2", "name" => "DON. MIDOLLO OSSEO SENZA MAGG 1,20", "parent_id" => $parent->id]);
         Taxonomy::firstOrCreate(['code' => "DON", "name" => "DONAZIONE SANGUE CON MAGG 1,20", "parent_id" => $parent->id]);
@@ -154,15 +154,15 @@ class Install extends Command
         Taxonomy::firstOrCreate(['code' => "DON3", "name" => "DONAZIONE SANGUE PER MENSILIZZATI", "parent_id" => $parent->id]);
 
 
-        (new \Railken\Amethyst\Managers\EmployeeManager())->createOrFail(\Railken\Amethyst\Fakers\EmployeeFaker::make()->parameters()->toArray());
+        (new \Amethyst\Managers\EmployeeManager())->createOrFail(\Amethyst\Fakers\EmployeeFaker::make()->parameters()->toArray());
 
         $this->call('passport:install', []);
         $this->call('amethyst:data-view:seed');
         $this->call('amethyst:permission:flush');
-        \Railken\Amethyst\Models\ModelHasRole::create(['role_id' => 1,'model_type' => 'user', 'model_id' => 1]);
+        \Amethyst\Models\ModelHasRole::create(['role_id' => 1,'model_type' => 'user', 'model_id' => 1]);
 
-        $fgm = new \Railken\Amethyst\Managers\FileGeneratorManager();
-        $dbm = new \Railken\Amethyst\Managers\DataBuilderManager();
+        $fgm = new \Amethyst\Managers\FileGeneratorManager();
+        $dbm = new \Amethyst\Managers\DataBuilderManager();
         $dataBuilder = $dbm->getRepository()->findOneBy(['name' => 'office by id']);
         $fgm->createOrFail([
             'name'     => 'Authentication QR Code',

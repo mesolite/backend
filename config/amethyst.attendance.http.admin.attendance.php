@@ -2,7 +2,7 @@
 
 return [
     'enabled'    => true,
-    'controller' => Railken\Amethyst\Http\Controllers\Admin\AttendancesController::class,
+    'controller' => Amethyst\Http\Controllers\Admin\AttendancesController::class,
     'router'     => [
         'as'     => 'attendance.',
         'prefix' => '/attendances',
