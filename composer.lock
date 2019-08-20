@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df88da4f629982b2cd0510d3a410236d",
+    "content-hash": "dca73d5bfc9ceffc47949f19b3993516",
     "packages": [
         {
             "name": "amethyst/account",
@@ -559,6 +559,156 @@
             "time": "2019-07-14T18:31:05+00:00"
         },
         {
+            "name": "amethyst/consume-rule",
+            "version": "v0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/consume-rule.git",
+                "reference": "68fd456a5de56f832a01bce5256972971c6ed575"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/consume-rule/zipball/68fd456a5de56f832a01bce5256972971c6ed575",
+                "reference": "68fd456a5de56f832a01bce5256972971c6ed575",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "mossadal/math-parser": "^1.3",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ConsumeRuleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-consume-rule",
+                "consume-rule",
+                "laravel"
+            ],
+            "time": "2019-07-14T15:50:03+00:00"
+        },
+        {
+            "name": "amethyst/contact",
+            "version": "v0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/contact.git",
+                "reference": "d8d8df118306d34fc6fbc09a2f54f8000b8d25e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/contact/zipball/d8d8df118306d34fc6fbc09a2f54f8000b8d25e4",
+                "reference": "d8d8df118306d34fc6fbc09a2f54f8000b8d25e4",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "contact",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ContactServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-contact",
+                "contact",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:07:31+00:00"
+        },
+        {
+            "name": "amethyst/customer",
+            "version": "v0.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/customer.git",
+                "reference": "37f6a65be216e897461f520556a6e281dde19204"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/customer/zipball/37f6a65be216e897461f520556a6e281dde19204",
+                "reference": "37f6a65be216e897461f520556a6e281dde19204",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/address": "0.1.*",
+                "amethyst/common": "0.1.*",
+                "amethyst/legal-entity": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\CustomerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-customer",
+                "customer",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:07:51+00:00"
+        },
+        {
             "name": "amethyst/data-builder",
             "version": "v0.1.22",
             "source": {
@@ -1111,6 +1261,116 @@
             "time": "2019-07-14T11:09:27+00:00"
         },
         {
+            "name": "amethyst/invoice",
+            "version": "v0.1.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/invoice.git",
+                "reference": "c0e8e995f2e0af65f54a379d50b1c6856edb369e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/invoice/zipball/c0e8e995f2e0af65f54a379d50b1c6856edb369e",
+                "reference": "c0e8e995f2e0af65f54a379d50b1c6856edb369e",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/file-generator": "0.1.*",
+                "amethyst/legal-entity": "0.1.*",
+                "amethyst/listener": "0.1.*",
+                "amethyst/tax": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "amethyst/work": "0.1.*",
+                "league/iso3166": "^2.1",
+                "moneyphp/money": "^3.1",
+                "mossadal/math-parser": "^1.3",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\InvoiceServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\Database\\Seeds\\": "database/seeds/",
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-invoice",
+                "invoice",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:09:33+00:00"
+        },
+        {
+            "name": "amethyst/issue",
+            "version": "v0.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/issue.git",
+                "reference": "661f4045fdbba22bd8bee7081509495d0edd47ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/issue/zipball/661f4045fdbba22bd8bee7081509495d0edd47ce",
+                "reference": "661f4045fdbba22bd8bee7081509495d0edd47ce",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "issue",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\IssueServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-issue",
+                "issue",
+                "laravel"
+            ],
+            "time": "2019-07-14T11:09:40+00:00"
+        },
+        {
             "name": "amethyst/legal-entity",
             "version": "v0.1.21",
             "source": {
@@ -1516,6 +1776,215 @@
             "time": "2019-07-14T11:10:53+00:00"
         },
         {
+            "name": "amethyst/price",
+            "version": "v0.1.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/price.git",
+                "reference": "c9a600bb9aff23640e10710eb8524a04272d360f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/price/zipball/c9a600bb9aff23640e10710eb8524a04272d360f",
+                "reference": "c9a600bb9aff23640e10710eb8524a04272d360f",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/consume-rule": "0.1.*",
+                "amethyst/price-rule": "0.1.*",
+                "amethyst/target": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "price",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\PriceServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-price",
+                "laravel",
+                "price"
+            ],
+            "time": "2019-07-14T11:10:58+00:00"
+        },
+        {
+            "name": "amethyst/price-rule",
+            "version": "v0.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/price-rule.git",
+                "reference": "074166955c00626ae3681c6961df56d1762e7082"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/price-rule/zipball/074166955c00626ae3681c6961df56d1762e7082",
+                "reference": "074166955c00626ae3681c6961df56d1762e7082",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "mossadal/math-parser": "^1.3",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\PriceRuleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-price-rule",
+                "laravel",
+                "price-rule"
+            ],
+            "time": "2019-07-14T14:02:15+00:00"
+        },
+        {
+            "name": "amethyst/product",
+            "version": "v0.1.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/product.git",
+                "reference": "e17d3d81d5891799b5a621a0ad2de776a7af9eb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/product/zipball/e17d3d81d5891799b5a621a0ad2de776a7af9eb1",
+                "reference": "e17d3d81d5891799b5a621a0ad2de776a7af9eb1",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/supplier": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "product",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ProductServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-product",
+                "laravel",
+                "product"
+            ],
+            "time": "2019-07-14T11:11:09+00:00"
+        },
+        {
+            "name": "amethyst/project",
+            "version": "v0.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/project.git",
+                "reference": "cfbd67821603b182015ddda2a30fe6c1848dec00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/project/zipball/cfbd67821603b182015ddda2a30fe6c1848dec00",
+                "reference": "cfbd67821603b182015ddda2a30fe6c1848dec00",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "amethyst/taxonomy": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "project",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\ProjectServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-project",
+                "laravel",
+                "project"
+            ],
+            "time": "2019-07-14T11:11:15+00:00"
+        },
+        {
             "name": "amethyst/schedule",
             "version": "v0.1.16",
             "source": {
@@ -1615,6 +2084,152 @@
                 "setting"
             ],
             "time": "2019-07-14T12:46:38+00:00"
+        },
+        {
+            "name": "amethyst/supplier",
+            "version": "v0.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/supplier.git",
+                "reference": "dfb26a9a4631b853a2632f6cf8263f0c28301b1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/supplier/zipball/dfb26a9a4631b853a2632f6cf8263f0c28301b1b",
+                "reference": "dfb26a9a4631b853a2632f6cf8263f0c28301b1b",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\SupplierServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-supplier",
+                "laravel",
+                "supplier"
+            ],
+            "time": "2019-07-14T11:12:11+00:00"
+        },
+        {
+            "name": "amethyst/target",
+            "version": "v0.1.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/target.git",
+                "reference": "b63edf314f4a107e7bb317b616501a34ea9bc909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/target/zipball/b63edf314f4a107e7bb317b616501a34ea9bc909",
+                "reference": "b63edf314f4a107e7bb317b616501a34ea9bc909",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "target",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\TargetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-target",
+                "laravel",
+                "target"
+            ],
+            "time": "2019-07-14T12:42:18+00:00"
+        },
+        {
+            "name": "amethyst/tax",
+            "version": "v0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/tax.git",
+                "reference": "77e4995284ff8cc7a4b5d465808ce2d594119adb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/tax/zipball/77e4995284ff8cc7a4b5d465808ce2d594119adb",
+                "reference": "77e4995284ff8cc7a4b5d465808ce2d594119adb",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\TaxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-tax",
+                "laravel",
+                "tax"
+            ],
+            "time": "2019-07-14T11:12:21+00:00"
         },
         {
             "name": "amethyst/taxonomy",
@@ -1718,6 +2333,59 @@
             "time": "2019-07-14T15:46:55+00:00"
         },
         {
+            "name": "amethyst/token",
+            "version": "v0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/token.git",
+                "reference": "f966e8bd525a0347ef931e97ed5a41a85e1ff83a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/token/zipball/f966e8bd525a0347ef931e97ed5a41a85e1ff83a",
+                "reference": "f966e8bd525a0347ef931e97ed5a41a85e1ff83a",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1",
+                "ramsey/uuid": "^3.8"
+            },
+            "require-dev": {
+                "amethyst/authentication": "0.1.*",
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "token",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\TokenServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-token",
+                "laravel",
+                "token"
+            ],
+            "time": "2019-07-14T15:31:15+00:00"
+        },
+        {
             "name": "amethyst/user",
             "version": "v0.1.14",
             "source": {
@@ -1765,6 +2433,57 @@
                 "user"
             ],
             "time": "2019-07-14T11:12:39+00:00"
+        },
+        {
+            "name": "amethyst/warehouse",
+            "version": "v0.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amethyst-php/warehouse.git",
+                "reference": "0b8955c6dd126adc818b5904712608efb38a420f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amethyst-php/warehouse/zipball/0b8955c6dd126adc818b5904712608efb38a420f",
+                "reference": "0b8955c6dd126adc818b5904712608efb38a420f",
+                "shasum": ""
+            },
+            "require": {
+                "amethyst/common": "0.1.*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "amethyst/foo": "0.1.*",
+                "orchestra/testbench": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "amethyst": {
+                    "package": "warehouse",
+                    "namespace": "Railken\\Amethyst"
+                },
+                "laravel": {
+                    "providers": [
+                        "Amethyst\\Providers\\WarehouseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amethyst\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "amethyst",
+                "amethyst-warehouse",
+                "laravel",
+                "warehouse"
+            ],
+            "time": "2019-07-14T14:58:46+00:00"
         },
         {
             "name": "amethyst/work",
@@ -2261,6 +2980,237 @@
             "time": "2014-10-24T07:27:01+00:00"
         },
         {
+            "name": "doctrine/cache",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "doctrine/coding-standard": "^4.0",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^7.0",
+                "predis/predis": "~1.0"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "https://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2018-08-21T18:01:43+00:00"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "v2.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "22800bd651c1d8d2a9719e2a3dc46d5108ebfcc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/22800bd651c1d8d2a9719e2a3dc46d5108ebfcc9",
+                "reference": "22800bd651c1d8d2a9719e2a3dc46d5108ebfcc9",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/cache": "^1.0",
+                "doctrine/event-manager": "^1.0",
+                "ext-pdo": "*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^5.0",
+                "jetbrains/phpstorm-stubs": "^2018.1.2",
+                "phpstan/phpstan": "^0.10.1",
+                "phpunit/phpunit": "^7.4",
+                "symfony/console": "^2.0.5|^3.0|^4.0",
+                "symfony/phpunit-bridge": "^3.4.5|^4.0.5"
+            },
+            "suggest": {
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
+            },
+            "bin": [
+                "bin/doctrine-dbal"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.9.x-dev",
+                    "dev-develop": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
+            "homepage": "https://www.doctrine-project.org/projects/dbal.html",
+            "keywords": [
+                "abstraction",
+                "database",
+                "dbal",
+                "mysql",
+                "persistence",
+                "pgsql",
+                "php",
+                "queryobject"
+            ],
+            "time": "2018-12-31T03:27:51+00:00"
+        },
+        {
+            "name": "doctrine/event-manager",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/event-manager.git",
+                "reference": "a520bc093a0170feeb6b14e9d83f3a14452e64b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/a520bc093a0170feeb6b14e9d83f3a14452e64b3",
+                "reference": "a520bc093a0170feeb6b14e9d83f3a14452e64b3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "conflict": {
+                "doctrine/common": "<2.9@dev"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^4.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\": "lib/Doctrine/Common"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "Doctrine Event Manager component",
+            "homepage": "https://www.doctrine-project.org/projects/event-manager.html",
+            "keywords": [
+                "event",
+                "eventdispatcher",
+                "eventmanager"
+            ],
+            "time": "2018-06-11T11:59:03+00:00"
+        },
+        {
             "name": "doctrine/inflector",
             "version": "v1.3.0",
             "source": {
@@ -2713,16 +3663,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.10.15",
+            "version": "8.10.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "e67ce0839ba448988d109c6c17718472a5d9ccff"
+                "reference": "c62db205bb94fef8bd377c12d3a14e5677895db2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/e67ce0839ba448988d109c6c17718472a5d9ccff",
-                "reference": "e67ce0839ba448988d109c6c17718472a5d9ccff",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/c62db205bb94fef8bd377c12d3a14e5677895db2",
+                "reference": "c62db205bb94fef8bd377c12d3a14e5677895db2",
                 "shasum": ""
             },
             "require": {
@@ -2777,7 +3727,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2019-07-15T14:58:27+00:00"
+            "time": "2019-08-01T13:17:58+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -4392,6 +5342,88 @@
             "time": "2016-10-09T23:11:45+00:00"
         },
         {
+            "name": "moneyphp/money",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moneyphp/money.git",
+                "reference": "f6085de6c565e98d2f9a7311a605987b54e06d5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/f6085de6c565e98d2f9a7311a605987b54e06d5e",
+                "reference": "f6085de6c565e98d2f9a7311a605987b54e06d5e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "cache/taggable-cache": "^0.4.0",
+                "doctrine/instantiator": "^1.0.5",
+                "ext-bcmath": "*",
+                "ext-gmp": "*",
+                "ext-intl": "*",
+                "florianv/exchanger": "^1.0",
+                "florianv/swap": "^3.0",
+                "leanphp/phpspec-code-coverage": "^3.0 || ^4.0",
+                "moneyphp/iso-currencies": "^3.0",
+                "php-http/message": "^1.4",
+                "php-http/mock-client": "^1.0.0",
+                "phpspec/phpspec": "^3.0",
+                "phpunit/phpunit": "^5.7 || ^6.4 || ^7.0",
+                "psr/cache": "^1.0",
+                "symfony/phpunit-bridge": "^4"
+            },
+            "suggest": {
+                "ext-bcmath": "Calculate without integer limits",
+                "ext-gmp": "Calculate without integer limits",
+                "ext-intl": "Format Money objects with intl",
+                "florianv/exchanger": "Exchange rates library for PHP",
+                "florianv/swap": "Exchange rates library for PHP",
+                "psr/cache-implementation": "Used for Currency caching"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Money\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                },
+                {
+                    "name": "Mathias Verraes",
+                    "email": "mathias@verraes.net",
+                    "homepage": "http://verraes.net"
+                },
+                {
+                    "name": "Frederik Bosch",
+                    "email": "f.bosch@genkgo.nl"
+                }
+            ],
+            "description": "PHP implementation of Fowler's Money pattern",
+            "homepage": "http://moneyphp.org",
+            "keywords": [
+                "Value Object",
+                "money",
+                "vo"
+            ],
+            "time": "2019-02-07T18:01:35+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.24.0",
             "source": {
@@ -4468,6 +5500,53 @@
                 "psr-3"
             ],
             "time": "2018-11-05T09:00:11+00:00"
+        },
+        {
+            "name": "mossadal/math-parser",
+            "version": "v1.3.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mossadal/math-parser.git",
+                "reference": "981b03ca603fd281049e092d75245ac029e13dec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mossadal/math-parser/zipball/981b03ca603fd281049e092d75245ac029e13dec",
+                "reference": "981b03ca603fd281049e092d75245ac029e13dec",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/php-code-coverage": "6.0.*",
+                "phpunit/phpunit": "7.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MathParser\\": "src/MathParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Frank Wikström",
+                    "role": "Developer",
+                    "email": "frank@mossadal.se"
+                }
+            ],
+            "description": "PHP parser for mathematical expressions, including elementary functions, variables and implicit multiplication. Also supports symbolic differentiation.",
+            "homepage": "https://github.com/mossadal/math-parser",
+            "keywords": [
+                "mathematics",
+                "parser"
+            ],
+            "time": "2018-09-15T22:20:34+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5971,16 +7050,16 @@
         },
         {
             "name": "spatie/image",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image.git",
-                "reference": "61fa48fa4cb85eda4ef4f8f20b1c27edd9d38e85"
+                "reference": "8aac77a3ee18d7e0e5cb51cd67eb9558f1f491ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image/zipball/61fa48fa4cb85eda4ef4f8f20b1c27edd9d38e85",
-                "reference": "61fa48fa4cb85eda4ef4f8f20b1c27edd9d38e85",
+                "url": "https://api.github.com/repos/spatie/image/zipball/8aac77a3ee18d7e0e5cb51cd67eb9558f1f491ef",
+                "reference": "8aac77a3ee18d7e0e5cb51cd67eb9558f1f491ef",
                 "shasum": ""
             },
             "require": {
@@ -6009,9 +7088,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
+                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
+                    "homepage": "https://spatie.be"
                 }
             ],
             "description": "Manipulate images with an expressive API",
@@ -6020,7 +7099,7 @@
                 "image",
                 "spatie"
             ],
-            "time": "2019-05-13T11:38:22+00:00"
+            "time": "2019-08-02T23:57:44+00:00"
         },
         {
             "name": "spatie/image-optimizer",
