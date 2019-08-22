@@ -44,7 +44,7 @@ class Install extends Command
         $this->call('migrate:fresh');
         $this->call('cache:clear');
         $this->call('responsecache:clear');
-        $this->call('permission:cache-reset');
+        $this->call('amethyst:permission:flush');
         $this->call('amethyst:user:install');
         $this->call('amethyst:data-builder:seed');
         $this->call('amethyst:exporter:seed');
@@ -158,8 +158,6 @@ class Install extends Command
 
         $this->call('passport:install', []);
         $this->call('amethyst:data-view:seed');
-        $this->call('amethyst:permission:flush');
-        \Amethyst\Models\ModelHasRole::create(['role_id' => 1,'model_type' => 'user', 'model_id' => 1]);
 
         $fgm = new \Amethyst\Managers\FileGeneratorManager();
         $dbm = new \Amethyst\Managers\DataBuilderManager();

@@ -103,7 +103,5 @@ class AmethystServiceProvider extends ServiceProvider
         app('amethyst')->pushMorphRelation('file', 'model', 'employee');
         app('amethyst')->pushMorphRelation('file', 'model', 'attendance');
 
-        app('amethyst')->pushMorphRelation('model-has-role', 'model', 'user');
-
     }
 }
