@@ -46,6 +46,7 @@
         "amethyst/work": "0.1.*",
         "barryvdh/laravel-cors": "^0.11.2",
         "benconstable/laravel-localize-middleware": "^1.2",
+        "bugsnag/bugsnag-laravel": "^2.0",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
         "hanneskod/classtools": "~1.0",
