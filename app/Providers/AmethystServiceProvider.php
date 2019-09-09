@@ -34,4 +34,9 @@ class AmethystServiceProvider extends ServiceProvider
             }
         });
     }
+
+    public function boot()
+    {   
+        app('amethyst')->pushMorphRelation('ownable', 'owner', 'user');
+    }
 }
