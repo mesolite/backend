@@ -1,3 +1,5 @@
 # Mesolite
+Mesolite community edition backend
 
-www.mesolite.io
+# Status
+This is a working in progress project and it's still on version 0.1.*
