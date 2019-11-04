@@ -159,7 +159,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\AmethystServiceProvider::class,
-        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class
+        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
     ],
 
     /*
@@ -207,7 +207,7 @@ return [
         'URL'          => Illuminate\Support\Facades\URL::class,
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
-        'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
-        'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
+        'DNS1D'        => Milon\Barcode\Facades\DNS1DFacade::class,
+        'DNS2D'        => Milon\Barcode\Facades\DNS2DFacade::class,
     ],
 ];

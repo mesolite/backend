@@ -2,13 +2,12 @@
 
 namespace App\Http\Cache\Profiler;
 
-use Spatie\ResponseCache\CacheProfiles\CacheAllSuccessfulGetRequests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Spatie\ResponseCache\CacheProfiles\CacheAllSuccessfulGetRequests;
 
-class Profiler extends CacheAllSuccessfulGetRequests  
+class Profiler extends CacheAllSuccessfulGetRequests
 {
-
     public function cacheNameSuffix(Request $request): string
     {
         $prefix = $request->header('Accept-Language');

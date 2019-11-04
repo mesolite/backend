@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Compass Path
@@ -48,10 +47,10 @@ return [
         'exclude' => [
             'compass.*',
             'debugbar.*',
-            'clockwork.*'
+            'clockwork.*',
         ],
 
-        'base_uri' => '*'
+        'base_uri' => '*',
     ],
 
     /*
@@ -90,7 +89,7 @@ return [
 
     'template' => [
         'slate' => [
-            'output' => 'public/docs',
+            'output'           => 'public/docs',
             'example_requests' => [
                 'bash',
             ],

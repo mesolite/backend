@@ -2,28 +2,23 @@
 
 namespace App\Compass;
 
-use Illuminate\Support\Str;
-use Illuminate\Routing\Route;
 use Davidhsianturi\Compass\RouteResolver as BaseRouteResolver;
+use Illuminate\Routing\Route;
 
 class RouteResolver extends BaseRouteResolver
 {
     /**
-     * Retrieve title from the route
-     *
-     * @param Route $route
+     * Retrieve title from the route.
      *
      * @return string
      */
     public function getTitle(Route $route)
     {
-        return ucfirst(last(explode(".", $route->getName())));
+        return ucfirst(last(explode('.', $route->getName())));
     }
 
     /**
-     * Retrieve description from the route
-     *
-     * @param Route $route
+     * Retrieve description from the route.
      *
      * @return string
      */

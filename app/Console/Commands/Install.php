@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Amethyst\Models\Taxonomy;
 
 class Install extends Command
 {

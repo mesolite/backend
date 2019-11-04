@@ -3,11 +3,8 @@
 namespace App\Listeners;
 
 use Amethyst\Events\DataViewDataUpdated;
-use Illuminate\Support\Facades\Config;
 use Amethyst\Models\DataView;
 use Symfony\Component\Yaml\Yaml;
-use Amethyst\Models\ProductType;
-use Amethyst\Models\Taxonomy;
 
 class CustomDataView
 {
@@ -26,7 +23,6 @@ class CustomDataView
     public function handleAttendance(DataView $dataView)
     {
         if ($dataView->name === 'attendance-resource') {
-
             $config = Yaml::parse($dataView->config);
 
             // perhaps this should be added as constraint in the relationship BelongsTo
@@ -39,11 +35,10 @@ class CustomDataView
         }
 
         if ($dataView->name === 'employee-page-show') {
-
             $config = Yaml::parse($dataView->config);
 
             $config['options']['sections']['stats'] = [
-                'extends' => 'attendance-counter'
+                'extends' => 'attendance-counter',
             ];
 
             $dataView->config = Yaml::dump($config);

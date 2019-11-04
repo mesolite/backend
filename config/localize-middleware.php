@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Localization Determiner.
@@ -87,6 +86,6 @@ return [
 
     'hosts' => [
         'en' => 'www.example.co.uk',
-        'fr' => 'www.example.fr'
-    ]
+        'fr' => 'www.example.fr',
+    ],
 ];

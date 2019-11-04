@@ -12,21 +12,21 @@ return [
     |
     */
     'server' => [
-        'host' => env('SWOOLE_HTTP_HOST', '127.0.0.1'),
-        'port' => env('SWOOLE_HTTP_PORT', '1215'),
+        'host'        => env('SWOOLE_HTTP_HOST', '127.0.0.1'),
+        'port'        => env('SWOOLE_HTTP_PORT', '1215'),
         'public_path' => base_path('public'),
         // Determine if to use swoole to respond request for static files
         'handle_static_files' => env('SWOOLE_HANDLE_STATIC', true),
         // You must add --enable-openssl while compiling Swoole
         // Put `SWOOLE_SOCK_TCP | SWOOLE_SSL` if you want to enable SSL
         'socket_type' => SWOOLE_SOCK_TCP,
-        'options' => [
-            'pid_file' => env('SWOOLE_HTTP_PID_FILE', base_path('storage/logs/swoole_http.pid')),
-            'log_file' => env('SWOOLE_HTTP_LOG_FILE', base_path('storage/logs/swoole_http.log')),
+        'options'     => [
+            'pid_file'  => env('SWOOLE_HTTP_PID_FILE', base_path('storage/logs/swoole_http.pid')),
+            'log_file'  => env('SWOOLE_HTTP_LOG_FILE', base_path('storage/logs/swoole_http.log')),
             'daemonize' => env('SWOOLE_HTTP_DAEMONIZE', false),
             // Normally this value should be 1~4 times larger according to your cpu cores.
-            'reactor_num' => env('SWOOLE_HTTP_REACTOR_NUM', swoole_cpu_num()),
-            'worker_num' => env('SWOOLE_HTTP_WORKER_NUM', swoole_cpu_num()),
+            'reactor_num'     => env('SWOOLE_HTTP_REACTOR_NUM', swoole_cpu_num()),
+            'worker_num'      => env('SWOOLE_HTTP_WORKER_NUM', swoole_cpu_num()),
             'task_worker_num' => env('SWOOLE_HTTP_TASK_WORKER_NUM', swoole_cpu_num()),
             // The data to receive can't be larger than buffer_output_size.
             'package_max_length' => 20 * 1024 * 1024,
@@ -40,7 +40,7 @@ return [
             'send_yield' => true,
             // You must add --enable-openssl while compiling Swoole
             'ssl_cert_file' => null,
-            'ssl_key_file' => null,
+            'ssl_key_file'  => null,
         ],
     ],
 
@@ -77,8 +77,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'instances' => [
-        'auth'
-    ], 
+        'auth',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
-        Spatie\Permission\PermissionServiceProvider::class
+        Spatie\Permission\PermissionServiceProvider::class,
     ],
 
     /*
@@ -125,7 +125,6 @@ return [
         //     ]
         // ],
     ],
-    'document_root' => base_path('public'),
+    'document_root'         => base_path('public'),
     'enable_static_handler' => true,
-
 ];

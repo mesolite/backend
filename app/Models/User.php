@@ -2,18 +2,21 @@
 
 namespace App\Models;
 
+use Amethyst\Models\User as BaseUser;
+use Amethyst\Traits\PermissionTrait;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
-use Amethyst\Models\User as BaseUser;
-use Amethyst\Traits\PermissionTrait;
 use Railken\Lem\Contracts\AgentContract;
 
 class User extends BaseUser implements AuthenticatableContract, AuthorizableContract, AgentContract
 {
-    use PermissionTrait, Authenticatable, HasApiTokens, Notifiable;
+    use PermissionTrait;
+    use Authenticatable;
+    use HasApiTokens;
+    use Notifiable;
 
     // tmp lag
     public function can($p, $a = [])
