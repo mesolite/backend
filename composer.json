@@ -53,7 +53,7 @@
     "require-dev": {
         "amethyst/foo": "^0.1.8",
         "barryvdh/laravel-debugbar": "^3.2",
-        "davidhsianturi/laravel-compass": "^0.1.0",
+        "davidhsianturi/laravel-compass": "^0.1.1",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",

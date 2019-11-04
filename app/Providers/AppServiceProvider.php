@@ -20,8 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(
+        /*$this->app->singleton(
             RouteResolverContract::class, RouteResolver::class
-        );
+        );*/
     }
 }
