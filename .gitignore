@@ -17,3 +17,5 @@ yarn-error.log
 laravel-echo-server\.json
 docs
 public/assets/amethyst/
+public/vendor/compass/
+resources/views/vendor/compass

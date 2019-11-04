@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Compass\RouteResolver;
+use Davidhsianturi\Compass\Contracts\RouteResolverContract;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,5 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton(
+            RouteResolverContract::class, RouteResolver::class
+        );
     }
 }
