@@ -18,7 +18,7 @@ class Admin
     {
         $user = Auth::user();
 
-        if (!$user || $user->role !== 'admin') {
+        if (!$user || $user->groups->where('name', 'can-access-admin')->count() === 0) {
             abort(404);
         }
 

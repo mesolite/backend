@@ -5,34 +5,21 @@
     "require": {
         "php": "^7.1.3",
         "amethyst/account": "0.1.*",
-        "amethyst/action": "0.1.*",
         "amethyst/admin": "0.1.*",
         "amethyst/attribute": "0.1.*",
         "amethyst/authentication": "0.1.*",
+        "amethyst/notification": "0.1.*",
         "amethyst/post": "0.1.*",
         "amethyst/project": "0.1.*",
         "amethyst/issue": "0.1.*",
         "amethyst/config": "0.1.*",
-        "amethyst/customer": "0.1.*",
-        "amethyst/data-builder": "0.1.*",
         "amethyst/data-view": "0.1.*",
-        "amethyst/email-log": "0.1.*",
-        "amethyst/email-sender": "0.1.*",
-        "amethyst/event-logger": "0.1.*",
-        "amethyst/exporter": "0.1.*",
-        "amethyst/file": "0.1.*",
-        "amethyst/file-generator": "0.1.*",
-        "amethyst/importer": "0.1.*",
-        "amethyst/notification": "0.1.*",
-        "amethyst/notification-sender": "0.1.*",
-        "amethyst/morph-to-relation": "0.1.*",
         "amethyst/owner": "0.1.*",
+        "amethyst/group": "0.1.*",
         "amethyst/permission": "0.1.*",
-        "amethyst/relation": "0.1.*",
         "amethyst/relation-schema": "0.1.*",
         "amethyst/setting": "0.1.*",
         "amethyst/taxonomy": "0.1.*",
-        "amethyst/template": "0.1.*",
         "amethyst/user": "0.1.*",
         "barryvdh/laravel-cors": "^0.11.2",
         "benconstable/laravel-localize-middleware": "^1.2",
@@ -85,6 +72,12 @@
         }
     },
     "scripts": {
+        "pre-install-cmd": [
+            "@php -r \"file_exists('bootstrap/cache/relations.php') && unlink('bootstrap/cache/relations.php');\""
+        ],
+        "pre-update-cmd": [
+            "@php -r \"file_exists('bootstrap/cache/relations.php') && unlink('bootstrap/cache/relations.php');\""
+        ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -93,8 +86,9 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover",
-            "@php artisan mapper:generate"
+            "@php artisan cache:clear",
+            "@php artisan mapper:generate",
+            "@php artisan package:discover"
         ]
     },
     "config": {
