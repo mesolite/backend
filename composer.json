@@ -26,8 +26,6 @@
         "bugsnag/bugsnag-laravel": "^2.0",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
-        "hanneskod/classtools": "~1.0",
-        "imanghafoori/eloquent-relativity": "^1.0",
         "itsgoingd/clockwork": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/passport": "^7.0",
