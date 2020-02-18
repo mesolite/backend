@@ -13,9 +13,6 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        \Amethyst\Events\DataViewDataUpdated::class => [
-            // \App\Listeners\CustomDataView::class,
-        ],
     ];
 
     /**

@@ -45,9 +45,9 @@ class Install extends Command
         $this->call('migrate:fresh');
         $this->call('cache:clear');
         $this->call('responsecache:clear');
+        /*
         $this->call('amethyst:permission:flush');
         $this->call('amethyst:user:install');
-
 
         RelationSchema::firstOrCreate([
             'name'   => 'groups',
@@ -81,6 +81,6 @@ class Install extends Command
         $this->call('db:seed', ['--class' => \Amethyst\Database\Seeds\TaxonomySeeder::class]);
 
         $this->call('passport:install', []);
-        $this->call('amethyst:data-view:seed');
+        $this->call('amethyst:data-view:seed');*/
     }
 }

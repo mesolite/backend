@@ -17,6 +17,8 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
+        NotFoundHttpException::class,
+        MethodNotAllowedHttpException::class
     ];
 
     /**
@@ -47,17 +49,11 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         if ($exception instanceof NotFoundHttpException) {
-            return new JsonResponse(['errors' => [
-                'code'       => 'not_found',
-                'suggestion' => route('api.index'),
-            ]], Response::HTTP_NOT_FOUND);
+            return response(null, Response::HTTP_NOT_FOUND);
         }
 
         if ($exception instanceof MethodNotAllowedHttpException) {
-            return new JsonResponse(['errors' => [
-                'code'       => 'method_not_allowed',
-                'suggestion' => route('api.index'),
-            ]], Response::HTTP_METHOD_NOT_ALLOWED);
+            return response(null, Response::HTTP_NOT_FOUND);
         }
 
         return parent::render($request, $exception);

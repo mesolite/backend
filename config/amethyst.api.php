@@ -2,25 +2,22 @@
 
 return [
     'http' => [
-        'admin' => [
-            'router' => [
-                'as'         => 'admin.',
-                'middleware' => ['auth:api', 'admin'],
-                'prefix'     => '/api/admin',
-            ],
-        ],
         'app' => [
             'router' => [
                 'as'         => 'app.',
-                'middleware' => ['api'],
+                'middleware' => [
+                	'optional-auth:api',
+                ],
                 'prefix'     => '/api',
             ],
         ],
-        'user' => [
+        'data' => [
             'router' => [
-                'as'         => 'user.',
-                'middleware' => ['auth:api'],
-                'prefix'     => '/api/user',
+                'as'         => 'data.',
+                'middleware' => [
+                    'optional-auth:api',
+                ],
+                'prefix'     => '/api/data',
             ],
         ],
     ],
