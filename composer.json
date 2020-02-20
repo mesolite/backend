@@ -9,6 +9,7 @@
         "amethyst/authentication": "^0.2.0",
         "amethyst/data-view": "0.2.*",
         "amethyst/group": "0.2.*",
+        "amethyst/data-schema": "0.2.*",
         "amethyst/relation-schema": "0.2.*",
         "amethyst/setting": "^0.2.0",
         "amethyst/user": "0.2.*",

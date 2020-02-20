@@ -9,6 +9,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(PermissionSeeder::class);
+
+        // Dummy seeder with dynamic data
+        $this->call(CatSeeder::class);
     }
 }

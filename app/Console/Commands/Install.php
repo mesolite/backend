@@ -3,8 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Amethyst\Models\RelationSchema;
-use Symfony\Component\Yaml\Yaml;
 
 class Install extends Command
 {
@@ -41,46 +39,14 @@ class Install extends Command
             return;
         }
 
-        $this->call('mapper:generate');
-        $this->call('migrate:fresh');
+        $this->call('passport:install');
         $this->call('cache:clear');
+
         $this->call('responsecache:clear');
-        /*
-        $this->call('amethyst:permission:flush');
+        $this->call('mapper:generate');
+        $this->call('amethyst:data-view:seed');
+        $this->call('db:seed');
         $this->call('amethyst:user:install');
-
-        RelationSchema::firstOrCreate([
-            'name'   => 'groups',
-            'type'   => 'MorphToMany',
-            'data' => 'user',
-            'payload' => Yaml::dump([
-                'target' => 'group',
-                'key' => 'user-group'
-            ])
-        ]);
-
-        RelationSchema::firstOrCreate([
-            'name'   => 'users',
-            'type'   => 'MorphToMany',
-            'data' => 'group',
-            'payload' => Yaml::dump([
-                'target' => 'user',
-                'key' => 'user-group'
-            ])
-        ]);
-
-        $group = \Amethyst\Models\Group::create([
-            'name' => 'can-access-admin'
-        ]);
-
-        \App\Models\User::where('id', 1)->first()->groups()->attach($group->id);
-
-        // $this->call('amethyst:data-builder:seed');
-        // $this->call('amethyst:exporter:seed');
-        // $this->call('amethyst:importer:seed');
-        $this->call('db:seed', ['--class' => \Amethyst\Database\Seeds\TaxonomySeeder::class]);
-
-        $this->call('passport:install', []);
-        $this->call('amethyst:data-view:seed');*/
+        $this->call('amethyst:permission:flush');
     }
 }
