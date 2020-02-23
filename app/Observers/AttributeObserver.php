@@ -17,7 +17,7 @@ class AttributeObserver
      */
     public function created(Attribute $attribute)
     {
-        app('amethyst.data-view')->createAttributeByName($attribute->data, $attribute->name);
+        app('amethyst.data-view')->createAttributeByName($attribute->model, $attribute->name);
     }
 
     /**
@@ -30,7 +30,7 @@ class AttributeObserver
         $oldName = $attribute->getOriginal()['name'];
 
         if ($attribute->name !== $oldName) {
-            app('amethyst.data-view')->renameAttributeByName($attribute->data, $oldName, $attribute->name);
+            app('amethyst.data-view')->renameAttributeByName($attribute->model, $oldName, $attribute->name);
         }
 
     }
@@ -42,6 +42,6 @@ class AttributeObserver
      */
     public function deleted(Attribute $attribute)
     {
-        app('amethyst.data-view')->removeAttributeByName($attribute->data, $oldName, $attribute->name);
+        app('amethyst.data-view')->removeAttributeByName($attribute->model, $oldName, $attribute->name);
     }
 }

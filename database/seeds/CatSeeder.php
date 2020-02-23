@@ -21,6 +21,7 @@ class CatSeeder extends Seeder
             'model'  => 'cat',
             'name'   => 'name',
             'schema' => 'Text',
+            'required' => true
         ])->getResource();
 
         app('amethyst')->get('attribute')->createOrFail([
@@ -45,7 +46,7 @@ class CatSeeder extends Seeder
             ])->getResource();
 
             if (isset($prevCat)) {
-                $cat->friends()->attach($prevCat);
+                $cat->friends()->withTimestamps()->attach($prevCat);
             }
 
             $prevCat = $cat;
