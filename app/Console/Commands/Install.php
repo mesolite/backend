@@ -45,6 +45,7 @@ class Install extends Command
         $this->call('responsecache:clear');
         $this->call('mapper:generate');
         $this->call('amethyst:data-view:seed');
+        $this->call('amethyst:user:install');
         $this->call('db:seed');
         $this->call('amethyst:user:install');
         $this->call('amethyst:permission:flush');
