@@ -30,17 +30,16 @@ class PermissionSeeder extends Seeder
             'data' => 'group',
             'payload' => Yaml::dump([
                 'target' => 'user',
-                'key' => 'user-group'
+                'key' => 'user-group',
+                'inverse' => true
             ])
         ]);
 
-        /*
         $group = \Amethyst\Models\Group::create([
             'name' => 'can-access-admin'
         ]);
 
         \App\Models\User::where('id', 1)->first()->groups()->attach($group->id);
-        */
 
         app('amethyst')->getData()->map(function ($data, $key) {
             RelationSchema::firstOrCreate([
