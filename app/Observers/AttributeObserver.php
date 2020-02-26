@@ -33,10 +33,21 @@ class AttributeObserver
             app('amethyst.data-view')->renameAttributeByName($attribute->model, $oldName, $attribute->name);
         }
 
-        $oldOptions = $attribute->getOriginal()['options'];
+        $fields = ['required', 'options'];
 
-        if ($attribute->options !== $oldOptions) {
-            app('amethyst.data-view')->regenerateAttributeByName($attribute->model, $attribute->name);
+        foreach ($fields as $field) {
+
+            $oldField = $attribute->getOriginal()[$field];
+
+            if ($attribute->$field !== $oldField) {
+                app('amethyst.data-view')->regenerateAttributeByName($attribute->model, $attribute->name);
+            }
+        }
+
+        $oldModel = $attribute->getOriginal()['model'];
+
+        if ($attribute->model !== $oldModel) {
+            app('amethyst.data-view')->moveAttributeByName($attribute->model, $oldModel, $attribute->name);
         }
     }
 
