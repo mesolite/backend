@@ -14,8 +14,6 @@ class PermissionSeeder extends Seeder
      */
     public function run()
     {
-        return;
-        
         RelationSchema::firstOrCreate([
             'name'   => 'groups',
             'type'   => 'MorphToMany',
