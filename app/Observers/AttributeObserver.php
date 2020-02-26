@@ -32,6 +32,12 @@ class AttributeObserver
         if ($attribute->name !== $oldName) {
             app('amethyst.data-view')->renameAttributeByName($attribute->model, $oldName, $attribute->name);
         }
+
+        $oldOptions = $attribute->getOriginal()['options'];
+
+        if ($attribute->options !== $oldOptions) {
+            app('amethyst.data-view')->regenerateAttributeByName($attribute->model, $attribute->name);
+        }
     }
 
     /**
@@ -41,6 +47,6 @@ class AttributeObserver
      */
     public function deleted(Attribute $attribute)
     {
-        app('amethyst.data-view')->removeAttributeByName($attribute->model, $oldName, $attribute->name);
+        app('amethyst.data-view')->removeAttributeByName($attribute->model, $attribute->name);
     }
 }
