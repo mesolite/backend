@@ -43,12 +43,6 @@ class AttributeObserver
                 app('amethyst.data-view')->regenerateAttributeByName($attribute->model, $attribute->name);
             }
         }
-
-        $oldModel = $attribute->getOriginal()['model'];
-
-        if ($attribute->model !== $oldModel) {
-            app('amethyst.data-view')->moveAttributeByName($attribute->model, $oldModel, $attribute->name);
-        }
     }
 
     /**
