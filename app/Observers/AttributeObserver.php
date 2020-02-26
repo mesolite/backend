@@ -32,7 +32,6 @@ class AttributeObserver
         if ($attribute->name !== $oldName) {
             app('amethyst.data-view')->renameAttributeByName($attribute->model, $oldName, $attribute->name);
         }
-
     }
 
     /**

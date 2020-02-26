@@ -47,7 +47,6 @@ class Install extends Command
         $this->call('amethyst:data-view:seed');
         $this->call('amethyst:user:install');
         $this->call('db:seed');
-        $this->call('amethyst:user:install');
         $this->call('amethyst:permission:flush');
     }
 }
