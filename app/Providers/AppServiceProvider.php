@@ -9,8 +9,8 @@ use Amethyst\Models\DataSchema;
 use App\Observers\DataSchemaObserver;
 use Amethyst\Models\RelationSchema;
 use App\Observers\RelationSchemaObserver;
-use Amethyst\Models\Attribute;
-use App\Observers\AttributeObserver;
+use Amethyst\Models\AttributeSchema;
+use App\Observers\AttributeSchemaObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
 
         DataSchema::observe(DataSchemaObserver::class);
         RelationSchema::observe(RelationSchemaObserver::class);
-        Attribute::observe(AttributeObserver::class);
+        AttributeSchema::observe(AttributeSchemaObserver::class);
     }
 
 }

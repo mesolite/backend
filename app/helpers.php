@@ -1,11 +1,6 @@
 <?php
 
-function TCPDF2DBarcode($arg)
+function ping()
 {
-    return new TCPDF2DBarcode(...func_get_args());
-}
-
-function TCPDFBarcode($arg)
-{
-    return new TCPDFBarcode(...func_get_args());
+    return 'pong';
 }

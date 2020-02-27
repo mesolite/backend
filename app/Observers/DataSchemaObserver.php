@@ -45,9 +45,9 @@ class DataSchemaObserver
             app('amethyst.data-view')->renameByName($oldName, $dataSchema->name);
 
 
-            foreach (app('amethyst')->get('attribute')->getRepository()->newQuery()->where('model', $oldName)->get() as $attribute) {
-                $attribute->model = $dataSchema->name;
-                $attribute->save();
+            foreach (app('amethyst')->get('attribute-schema')->getRepository()->newQuery()->where('model', $oldName)->get() as $attributeSchema) {
+                $attributeSchema->model = $dataSchema->name;
+                $attributeSchema->save();
             }
 
             // Change target for all relations.

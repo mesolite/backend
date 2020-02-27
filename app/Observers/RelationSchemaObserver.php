@@ -42,6 +42,6 @@ class RelationSchemaObserver
      */
     public function deleted(RelationSchema $relationSchema)
     {
-        app('amethyst.data-view')->removeRelationByName($relationSchema->data, $oldName, $relationSchema->name);
+        app('amethyst.data-view')->removeRelationByName($relationSchema->data, $relationSchema->name);
     }
 }

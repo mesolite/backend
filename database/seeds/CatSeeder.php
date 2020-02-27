@@ -17,17 +17,27 @@ class CatSeeder extends Seeder
             'name' => 'cat',
         ]);
 
-        app('amethyst')->get('attribute')->createOrFail([
+        app('amethyst')->get('attribute-schema')->createOrFail([
             'model'  => 'cat',
             'name'   => 'name',
             'schema' => 'Text',
             'required' => true
         ])->getResource();
 
-        app('amethyst')->get('attribute')->createOrFail([
+        app('amethyst')->get('attribute-schema')->createOrFail([
             'model'  => 'cat',
             'name'   => 'description',
             'schema' => 'Text',
+        ])->getResource();
+
+        app('amethyst')->get('attribute-schema')->createOrFail([
+            'model'  => 'cat',
+            'name'   => 'owner_id',
+            'schema' => 'BelongsTo',
+            'options' => Yaml::dump([
+                'relationData' => 'user',
+                'relationName' => 'owner'
+            ])
         ])->getResource();
 
         app('amethyst')->get('relation-schema')->createOrFail([
