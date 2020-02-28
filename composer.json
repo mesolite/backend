@@ -25,7 +25,8 @@
         "laravel/tinker": "^1.0",
         "matthewbdaly/laravel-etag-middleware": "^1.2",
         "predis/predis": "^1.1",
-        "swooletw/laravel-swoole": "^2.5"
+        "swooletw/laravel-swoole": "^2.5",
+        "imanghafoori/eloquent-relativity": "dev-dev-non-static"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
@@ -83,5 +84,11 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:railken/eloquent-relativity.git"
+        }
+    ]
 }
