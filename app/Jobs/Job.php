@@ -15,6 +15,6 @@ abstract class Job implements Uniqueable, ShouldQueue
 
     public function uniqueable()
     {
-        return sha1(get_class($this).":".serialize(get_object_vars($this)));
+        return sha1(get_class($this));
     }
 }

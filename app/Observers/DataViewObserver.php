@@ -18,6 +18,6 @@ class DataViewObserver
      */
     public function saved(DataView $dataView)
     {
-        TriggerEvent::dispatch(new DataViewFlush)->delay(now()->addSeconds(10));
+        TriggerEvent::dispatch(new DataViewFlush)->delay(now()->addSeconds(5));
     }
 }
