@@ -19,6 +19,8 @@ class CreateJobsTable extends Migration
             $table->unsignedInteger('reserved_at')->nullable();
             $table->unsignedInteger('available_at');
             $table->unsignedInteger('created_at');
+            $table->string('unique_id')->nullable();
+            $table->unique(['queue', 'unique_id'], 'jobs_queue_unique_id_unique');
         });
     }
 
