@@ -11,7 +11,7 @@ return [
     */
     'data' => [
         'user' => [
-            'table'      => 'amethyst_users',
+            'table'      => 'user',
             'comment'    => 'User',
             'model'      => App\Models\User::class,
             'schema'     => Amethyst\Schemas\UserSchema::class,
