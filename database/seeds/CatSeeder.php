@@ -61,5 +61,102 @@ class CatSeeder extends Seeder
 
             $prevCat = $cat;
         }
+
+
+        $workflow = app('amethyst')->get('workflow')->createOrFail([
+            'name' => 'meow',
+        ])->getResource();
+
+
+        $node = $workflow->next('data', [
+            'action'     => 'first',
+            'name'       => 'cat',
+            'query'      => 'id eq {{ id }}'
+        ], [
+            'cat' => 'resource',
+            '__agent' => '__agent'
+        ]);
+
+        $node1 = $workflow->new('data', [
+            'action'     => 'update',
+            'name'       => 'cat',
+            'query'      => 'id eq {{ cat.id }}',
+            'parameters' => [
+                'description' => "Ok, just feed me {{ random(2, 10) }} birds already. ",
+            ]
+        ]);
+
+        $node2 = $workflow->new('data', [
+            'action'     => 'update',
+            'name'       => 'cat',
+            'query'      => 'id eq {{ cat.id }}',
+            'parameters' => [
+                'description' => "As a cat, i won't obey any of your command! You're not my owner! You are {{ __agent.name }}!",
+            ]
+        ]);
+
+        $switch = $node->next('switcher', [
+            'channels' => [
+                $node1->id => '"{{ __agent.id }}" === "{{ cat.owner_id }}"',
+                $node2->id => '"{{ __agent.id }}" !== "{{ cat.owner_id }}"'
+            ]
+        ], [
+            'cat' => 'cat',
+            '__agent' => '__agent'
+        ]);
+
+        $switch->relations()->attach($node1);
+        $switch->relations()->attach($node2);
+        /*
+
+        $node = $workflow->switch([
+            [
+                'condition' => '{{ agent.id }} === {{ owner.id }}'
+                'data', 
+                [
+                    'action'     => 'update',
+                    'name'       => 'cat',
+                    'query'      => 'id eq {{ id }}',
+                    'parameters' => [
+                        'description' => "As a cat, i won't obey any of your command! You're not my owner!",
+                    ],
+                ]   
+        );*/
+
+        // Dispatch workflow for the first catm
+        $user = app('amethyst')->get('user')->getRepository()->findOneById(1);
+
+        $cat = app('amethyst')->get('cat')->getRepository()->findOneById(1);
+        $cat->owner()->associate($user);
+        $cat->save();
+
+        app('amethyst.action')->dispatchByWorkflow($workflow, ['__agent' => $user, 'id' => 1]);
+        app('amethyst.action')->dispatchByWorkflow($workflow, ['__agent' => $user, 'id' => 2]);
+
+        $api = config('amethyst.api.http.data.router.prefix');
+
+        app('amethyst')->get('data-view')->findOrCreateOrFail([
+            'name'    => '~cat~.feed',
+            'type'    => 'component',
+            'tag'     => 'cat',
+            'require' => 'cat',
+            'config'  => Yaml::dump([
+                'label'   => 'feed',
+                'extends' => "resource-execute",
+                'type'    => 'action',
+                'scope'   => 'resource',
+                'options' => [
+                    'http' => [
+                        'method' => 'POST',
+                        'url' => $api."/workflow/execute",
+                        'query' => "id eq {$workflow->id}",
+                        'body' => [
+                            'id' => "{{ resource.id }}"
+                        ]
+                    ]
+                ]
+            ]),
+            'parent_id' => app('amethyst')->get('data-view')->getRepository()->findOneBy(['name' => '~cat~.data.iterator.table'])
+        ])->getResource();
     }
 }
