@@ -20,7 +20,8 @@ class PermissionSeeder extends Seeder
             'data' => 'user',
             'payload' => Yaml::dump([
                 'target' => 'group',
-                'key' => 'user-group'
+                'key' => 'user-group',
+                'inversedBy' => 'users'
             ])
         ]);
 
@@ -31,7 +32,8 @@ class PermissionSeeder extends Seeder
             'payload' => Yaml::dump([
                 'target' => 'user',
                 'key' => 'user-group',
-                'inverse' => true
+                'inverse' => true,
+                'inversedBy' => 'groups'
             ])
         ]);
 
