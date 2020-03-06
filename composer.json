@@ -5,6 +5,7 @@
     "require": {
         "php": "^7.2",
         "amethyst/account": "0.2.*",
+        "amethyst/action": "^0.2.1",
         "amethyst/attribute-schema": "0.2.*",
         "amethyst/authentication": "0.2.*",
         "amethyst/data-schema": "0.2.*",
