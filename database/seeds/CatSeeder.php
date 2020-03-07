@@ -158,5 +158,68 @@ class CatSeeder extends Seeder
             ]),
             'parent_id' => app('amethyst')->get('data-view')->getRepository()->findOneBy(['name' => '~cat~.data.iterator.table'])
         ])->getResource();
+
+
+        $this->seedExport();
+    }
+
+    public function seedExport()
+    {
+        $workflow = app('amethyst')->get('workflow')->createOrFail([
+            'name' => 'cat-exporter',
+        ])->getResource();
+
+        $node = $workflow->next('exporter', [
+            'type'       => 'csv',
+            'data'       => 'cat',
+            'filter'     => '',
+            'filename'   => 'cat.csv',
+        ], [
+            'file' => 'file',
+            '__agent' => '__agent'
+        ], [
+            'body' => [
+                'id' => '{{ resource.id }}',
+                'name' => '{{ resource.name }}',
+                'description' => '{{ resource.description }}',
+            ]
+        ]);
+
+        $node = $node->next('notification', [
+            'agent' => [
+                'data' => 'user',
+                'filter' => 'id = {{ __agent.id }}'
+            ],
+            'message'    => 'The file is ready! Click here to download it',
+            'vars'      => [
+                'url' => "{{ file.media[0].getFullUrl() }}"
+            ]
+        ]);
+
+        $api = config('amethyst.api.http.data.router.prefix');
+        
+        app('amethyst')->get('data-view')->findOrCreateOrFail([
+            'name'    => '~cat~.export',
+            'type'    => 'component',
+            'tag'     => 'cat',
+            'require' => 'cat',
+            'config'  => Yaml::dump([
+                'label'   => 'export',
+                'extends' => "resource-execute",
+                'type'    => 'action',
+                'scope'   => 'global',
+                'options' => [
+                    'http' => [
+                        'method' => 'POST',
+                        'url' => $api."/workflow/execute",
+                        'query' => "id eq {$workflow->id}",
+                        'body' => [
+                            'queue' => 1
+                        ]
+                    ]
+                ]
+            ]),
+            'parent_id' => app('amethyst')->get('data-view')->getRepository()->findOneBy(['name' => '~cat~.data.iterator.table'])
+        ])->getResource();
     }
 }
