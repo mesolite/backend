@@ -20,3 +20,5 @@ docs
 public/assets/amethyst/
 public/vendor/compass/
 resources/views/vendor/compass
+
+database/seeds/LocalSeeder.php
