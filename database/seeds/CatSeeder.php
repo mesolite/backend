@@ -159,7 +159,6 @@ class CatSeeder extends Seeder
             'parent_id' => app('amethyst')->get('data-view')->getRepository()->findOneBy(['name' => '~cat~.data.iterator.table'])
         ])->getResource();
 
-
         $this->seedExport();
     }
 

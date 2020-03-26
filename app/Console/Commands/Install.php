@@ -41,8 +41,6 @@ class Install extends Command
 
         $this->call('passport:install');
         $this->call('cache:clear');
-
-        $this->call('responsecache:clear');
         $this->call('mapper:generate');
         $this->call('amethyst:data-view:seed');
         $this->call('amethyst:user:install');
