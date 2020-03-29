@@ -4,31 +4,15 @@
     "type": "project",
     "require": {
         "php": "^7.2",
-        "amethyst/account": "0.2.*",
-        "amethyst/action": "^0.2.1",
-        "amethyst/attribute-schema": "0.2.*",
-        "amethyst/authentication": "0.2.*",
-        "amethyst/data-schema": "0.2.*",
-        "amethyst/data-view": "0.2.*",
-        "amethyst/group": "0.2.*",
-        "amethyst/owner": "0.2.*",
-        "amethyst/permission": "0.2.*",
-        "amethyst/relation-schema": "0.2.*",
-        "amethyst/setting": "0.2.*",
-        "amethyst/user": "0.2.*",
-        "barryvdh/laravel-cors": "^0.11.2",
+        "mesolite/core": "0.1.*",
         "benconstable/laravel-localize-middleware": "^1.2",
         "bugsnag/bugsnag-laravel": "^2.0",
         "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.0",
-        "imanghafoori/eloquent-relativity": "dev-dev-non-static",
         "laravel/framework": "5.8.*",
         "laravel/passport": "^7.0",
         "laravel/tinker": "^1.0",
-        "matthewbdaly/laravel-etag-middleware": "^1.2",
-        "mingalevme/illuminate-uqueue": "^1.1",
-        "predis/predis": "^1.1",
-        "swooletw/laravel-swoole": "^2.5"
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
@@ -61,12 +45,6 @@
         }
     },
     "scripts": {
-        "pre-install-cmd": [
-            "@php -r \"file_exists('bootstrap/cache/map.php') && unlink('bootstrap/cache/map.php');\""
-        ],
-        "pre-update-cmd": [
-            "@php -r \"file_exists('bootstrap/cache/map.php') && unlink('bootstrap/cache/map.php');\""
-        ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],

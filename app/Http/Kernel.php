@@ -23,6 +23,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\ForceJson::class,
         \BenConstable\Localize\Http\Middleware\Localize::class,
         \Matthewbdaly\ETagMiddleware\ETag::class,
+        // \Amethyst\Permissions\PermissionMiddleware::class
     ];
 
     /**

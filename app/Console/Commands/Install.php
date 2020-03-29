@@ -35,16 +35,7 @@ class Install extends Command
      */
     public function handle()
     {
-        if (!$this->option('force') && !$this->confirm('All data will be erased, Do you wish to continue?')) {
-            return;
-        }
-
-        $this->call('passport:install');
-        $this->call('cache:clear');
-        $this->call('mapper:generate');
-        $this->call('amethyst:data-view:seed');
-        $this->call('amethyst:user:install');
+        $this->call('mesolite:install', ['--force' => $this->option('force')]);
         $this->call('db:seed');
-        $this->call('amethyst:permission:flush');
     }
 }

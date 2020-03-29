@@ -21,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // ...
     }
 
     /**
@@ -28,15 +29,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        app('amethyst.data-schema')->boot();
-        app('amethyst.attributable')->boot();
-        app('amethyst.relation-schema')->boot();
-        app('eloquent.mapper')->boot();
-
-        DataSchema::observe(DataSchemaObserver::class);
-        RelationSchema::observe(RelationSchemaObserver::class);
-        AttributeSchema::observe(AttributeSchemaObserver::class);
-        DataView::observe(DataViewObserver::class);
+        // ...    
     }
 
 }
