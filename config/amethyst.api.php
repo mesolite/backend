@@ -7,6 +7,7 @@ return [
                 'as'         => 'app.',
                 'middleware' => [
                 	'optional-auth:api',
+                    'permission'
                 ],
                 'prefix'     => '/api',
             ],
@@ -16,6 +17,7 @@ return [
                 'as'         => 'data.',
                 'middleware' => [
                     'optional-auth:api',
+                    'permission'
                 ],
                 'prefix'     => '/api/data',
             ],

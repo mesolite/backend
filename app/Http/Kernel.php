@@ -22,8 +22,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\ForceJson::class,
         \BenConstable\Localize\Http\Middleware\Localize::class,
-        \Matthewbdaly\ETagMiddleware\ETag::class,
-        // \Amethyst\Permissions\PermissionMiddleware::class
+        \Matthewbdaly\ETagMiddleware\ETag::class
     ];
 
     /**
@@ -65,6 +64,6 @@ class Kernel extends HttpKernel
         'guest'         => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'signed'        => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle'      => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'admin'         => \App\Http\Middleware\Admin::class,
+        'permission'    => \Amethyst\Permissions\PermissionMiddleware::class
     ];
 }
