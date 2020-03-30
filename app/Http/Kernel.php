@@ -22,7 +22,8 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\ForceJson::class,
         \BenConstable\Localize\Http\Middleware\Localize::class,
-        \Matthewbdaly\ETagMiddleware\ETag::class
+        \Matthewbdaly\ETagMiddleware\ETag::class,
+        \Mesolite\Http\Middleware\AccessTokenMiddleware::class,
     ];
 
     /**
