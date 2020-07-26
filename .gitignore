@@ -22,3 +22,5 @@ public/vendor/compass/
 resources/views/vendor/compass
 
 database/seeds/LocalSeeder.php
+
+storage/assets/amethyst/
